@@ -19,6 +19,8 @@ struct SideBarView: View {
     
     @State private var showingAwards = false
     
+ 
+    
     var tagFilters: [Filter] {
         tags.map { tag in
             Filter(id: tag.tagID, name: tag.tagName, icon: "tag", tag: tag)
@@ -38,7 +40,7 @@ struct SideBarView: View {
                 ForEach(tagFilters){ filter in
                     NavigationLink(value: filter){
                         Label(filter.name, systemImage: filter.icon)
-                            .badge(filter.tag?.tagActiveIssues.count ?? 0)
+                            .badge(filter.activeIssuesCount)
                             .contextMenu{
                                 Button {
                                     rename(filter)
@@ -51,6 +53,9 @@ struct SideBarView: View {
                                     Label("Delete", systemImage: "trash")
                                 }
                             }
+                            .accessibilityElement()
+                            .accessibilityLabel(filter.name)
+                            .accessibilityHint("^[\(filter.activeIssuesCount) issue](inflect: true)")
                     }
                 }
                 .onDelete(perform: delete)
