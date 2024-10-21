@@ -64,7 +64,7 @@ struct IssueView: View {
             
             Section{
                 VStack(alignment: .leading){
-                    Text("Basic information")
+                    Text("Basic Information") 
                         .font(.title)
                         .foregroundStyle(.secondary)
                     

@@ -14,7 +14,6 @@ extension Bundle {
         guard let url = self.url(forResource: file, withExtension: nil) else {
             fatalError("Could not find \(file) in bundle.")
         }
-        
         guard let data = try? Data(contentsOf: url) else {
             fatalError("Could not read \(file) from bundle.")
         }

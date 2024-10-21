@@ -1,0 +1,163 @@
+[
+    {
+        "name": "Primeros Pasos",
+        "description": "Agrega tu primer problema.",
+        "color": "Light Blue",
+        "criterion": "issues",
+        "value": 1,
+        "image": "figure.walk"
+    },
+    {
+        "name": "Un Gran Comienzo",
+        "description": "Agrega 10 problemas.",
+        "color": "Light Blue",
+        "criterion": "issues",
+        "value": 10,
+        "image": "hand.thumbsup.fill"
+    },
+    {
+        "name": "Subiendo de Nivel",
+        "description": "Agrega 20 problemas.",
+        "color": "Light Blue",
+        "criterion": "issues",
+        "value": 20,
+        "image": "tray.and.arrow.up.fill"
+    },
+    {
+        "name": "Acelerando",
+        "description": "Agrega 50 problemas.",
+        "color": "Light Blue",
+        "criterion": "issues",
+        "value": 50,
+        "image": "speedometer"
+    },
+    {
+        "name": "Causando Impacto",
+        "description": "Agrega 100 problemas.",
+        "color": "Light Blue",
+        "criterion": "issues",
+        "value": 100,
+        "image": "dot.radiowaves.left.and.right"
+    },
+    {
+        "name": "Alto Rendimiento",
+        "description": "Agrega 250 problemas.",
+        "color": "Light Blue",
+        "criterion": "issues",
+        "value": 250,
+        "image": "square.stack.3d.up.fill"
+    },
+    {
+        "name": "Estrella de Alto Rendimiento",
+        "description": "Agrega 500 problemas.",
+        "color": "Light Blue",
+        "criterion": "issues",
+        "value": 500,
+        "image": "star.circle.fill"
+    },
+    {
+        "name": "Campeón de Rendimiento",
+        "description": "Agrega 1000 problemas.",
+        "color": "Light Blue",
+        "criterion": "issues",
+        "value": 1000,
+        "image": "crown.fill"
+    },
+    {
+        "name": "Marcando Casillas",
+        "description": "Cierra tu primer problema.",
+        "color": "Green",
+        "criterion": "closed",
+        "value": 1,
+        "image": "checkmark.shield.fill"
+    },
+    {
+        "name": "Haciéndolo Genial",
+        "description": "Cierra 10 problemas.",
+        "color": "Green",
+        "criterion": "closed",
+        "value": 10,
+        "image": "guitars.fill"
+    },
+    {
+        "name": "20 son Suficientes",
+        "description": "Cierra 20 problemas.",
+        "color": "Green",
+        "criterion": "closed",
+        "value": 20,
+        "image": "20.square.fill"
+    },
+    {
+        "name": "¡Diana!",
+        "description": "Cierra 50 problemas.",
+        "color": "Green",
+        "criterion": "closed",
+        "value": 50,
+        "image": "target"
+    },
+    {
+        "name": "Volando Alto",
+        "description": "Cierra 100 problemas.",
+        "color": "Green",
+        "criterion": "closed",
+        "value": 100,
+        "image": "airplane.circle.fill"
+    },
+    {
+        "name": "¡Estás en Llamas!",
+        "description": "Cierra 250 problemas.",
+        "color": "Green",
+        "criterion": "closed",
+        "value": 250,
+        "image": "flame.fill"
+    },
+    {
+        "name": "El Jefe Marcador de Casillas",
+        "description": "Cierra 500 problemas.",
+        "color": "Green",
+        "criterion": "closed",
+        "value": 500,
+        "image": "text.badge.checkmark"
+    },
+    {
+        "name": "¡Boom!",
+        "description": "Cierra 1000 problemas.",
+        "color": "Green",
+        "criterion": "closed",
+        "value": 1000,
+        "image": "bolt.circle.fill"
+    },
+    {
+        "name": "Jugando con Etiquetas",
+        "description": "Has creado tu primera etiqueta.",
+        "color": "Gold",
+        "criterion": "tags",
+        "value": 1,
+        "image": "tag.fill"
+    },
+    {
+        "name": "Luchando con Etiquetas",
+        "description": "Has creado 10 etiquetas.",
+        "color": "Gold",
+        "criterion": "tags",
+        "value": 10,
+        "image": "tag.circle.fill"
+    },
+    {
+        "name": "Etiqueta Suprema",
+        "description": "Has creado 50 etiquetas.",
+        "color": "Gold",
+        "criterion": "tags",
+        "value": 50,
+        "image": "square.grid.3x1.folder.fill.badge.plus"
+    },
+    {
+        "name": "Colaborador",
+        "description": "Has comprado el desbloqueo premium.",
+        "color": "Purple",
+        "criterion": "unlock",
+        "value": 0,
+        "image": "dollarsign.square.fill"
+    }
+]
+ 

@@ -18,12 +18,12 @@ struct ContentView: View {
             .onDelete(perform: delete)
         }
         .navigationTitle("Issues")
-        .searchable(text: $dataController.filterText, tokens: $dataController.filterTokens, suggestedTokens: .constant(dataController.suggestedFilterTokens), prompt: "Filter issues"){ tag in
+        .searchable(text: $dataController.filterText, tokens: $dataController.filterTokens, suggestedTokens: .constant(dataController.suggestedFilterTokens), prompt: "Filter issues, or type # to add tags"){ tag in
             Text(tag.tagName)
         }
         .toolbar {
             Menu {
-                Button(dataController.filterEnabled ? "Turn Filter Off" : "Turn filter On"){
+                Button(dataController.filterEnabled ? "Turn Filter Off" : "Turn Filter On"){
                     dataController.filterEnabled.toggle()
                 }
                 

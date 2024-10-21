@@ -1,0 +1,85 @@
+/* 
+  Localizable.strings
+  FeedbackAssistant
+
+  Created by Guillermo Kramsky on 19/10/24.
+  
+*/
+/* GENERAL STRINGS */
+"OK" = "OK";
+"Cancel" = "Annulla";
+"Delete" = "Elimina";
+"Rename" = "Rinomina";
+"Actions" = "Azioni";
+
+/* SIDEBARVIEW */
+"Filters" = "Filtri";
+"Smart Filters" = "Filtri Intelligenti";
+"All Issues" = "Tutti i Problemi";
+"Recent Issues" = "Problemi Recenti";
+"Tags" = "Tag";
+"Add tag" = "Aggiungi tag";
+"Show awards" = "Mostra premi";
+
+"Rename tag" = "Rinomina tag";
+"New name" = "Nuovo nome";
+
+/* CONTENTVIEW */
+"Issues" = "Problemi";
+
+/* A button that shows a menu with the following options */
+"Filter" = "Filtro";
+"Turn Filter On" = "Attiva filtro"; /* Enables filtering */
+"Turn Filter Off" = "Disattiva filtro"; /* Disables filtering */
+"Sort By" = "Ordina per"; /* Adjust the order issues are shown */
+"Date Created" = "Data di creazione"; /* Sort issues by the date they were created */
+"Date Modified" = "Data di modifica"; /* Sort issues by the date they were last changed */
+"Newest to Oldest" = "Dal più nuovo al più vecchio"; /* Place newer issues before older issues */
+"Oldest to Newest" = "Dal più vecchio al più nuovo"; /* Place older issues before newer issues */
+
+"All" = "Tutti";
+"Open" = "Aperti";
+"Closed" = "Chiusi";
+
+"Low" = "Basso";
+"Medium" = "Medio";
+"High" = "Alto";
+
+/* Create a new issue */
+"New Issue" = "Nuovo Problema";
+
+/* A text placeholder, to help users search */
+"Filter issues, or type # to add tags" = "Filtra problemi, o digita # per aggiungere tag";
+
+/* Shown as a status for closed issues */
+"CLOSED" = "CHIUSO";
+
+/* DETAILSVIEW */
+"Details" = "Dettagli";
+
+/* NOISSUEVIEW */
+"No Issue Selected" = "Nessun problema selezionato";
+
+/* ISSUEVIEW */
+"Copy Issue Title" = "Copia titolo del problema";
+"Close Issue" = "Chiudi problema";
+"Re-open Issue" = "Riapri problema";
+
+/* Fields that let the users enter details about a specific issue */
+"Enter the issue title here" = "Inserisci qui il titolo del problema";
+"**Modified:** %@" = "**Modificato:** %@";
+"**Status:** %@" = "**Stato:** %@";
+"Priority" = "Priorità";
+"Add Tags" = "Aggiungi tag";
+"Basic Information" = "Informazioni di base";
+"Enter the issue description here" = "Inserisci qui la descrizione del problema";
+
+/* AWARDS VIEW */
+"Awards" = "Premi";
+
+/* DATA */
+"New tag" = "Nuovo tag";
+"New issue" = "Nuovo problema";
+
+/* DEBUG ONLY */
+"ADD SAMPLES" = "AGGIUNGI ESEMPI";

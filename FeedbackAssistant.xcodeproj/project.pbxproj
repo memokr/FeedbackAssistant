@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		102645472CC110EA00BCB096 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102645462CC110EA00BCB096 /* Bundle-Decodable.swift */; };
 		1026454A2CC117D900BCB096 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 102645492CC117D900BCB096 /* Colors.xcassets */; };
-		1026454B2CC117D900BCB096 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 102645482CC117D900BCB096 /* Awards.json */; };
 		1026454D2CC118AD00BCB096 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1026454C2CC118AD00BCB096 /* Award.swift */; };
 		1026454F2CC119E800BCB096 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1026454E2CC119E800BCB096 /* AwardsView.swift */; };
+		1026457D2CC3C63F00BCB096 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 1026457C2CC3C63F00BCB096 /* Awards.json */; };
+		102F81892CC3C87C000A1B0C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 102F81882CC3C87C000A1B0C /* Localizable.xcstrings */; };
 		105F5DDB2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */; };
 		105F5DDD2CB411EC00303F10 /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDC2CB411EC00303F10 /* Tag-CoreDataHelpers.swift */; };
 		105F5DDF2CB4228800303F10 /* IssueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDE2CB4228800303F10 /* IssueRow.swift */; };
@@ -30,10 +31,13 @@
 
 /* Begin PBXFileReference section */
 		102645462CC110EA00BCB096 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
-		102645482CC117D900BCB096 /* Awards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		102645492CC117D900BCB096 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1026454C2CC118AD00BCB096 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		1026454E2CC119E800BCB096 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		1026457B2CC3C63F00BCB096 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Awards.json; sourceTree = "<group>"; };
+		1026457E2CC3C64A00BCB096 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Awards.json"; sourceTree = "<group>"; };
+		102F81882CC3C87C000A1B0C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		102F818A2CC3C892000A1B0C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = it; path = it.lproj/Awards.json; sourceTree = "<group>"; };
 		105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		105F5DDC2CB411EC00303F10 /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		105F5DDE2CB4228800303F10 /* IssueRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRow.swift; sourceTree = "<group>"; };
@@ -99,7 +103,8 @@
 				105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */,
 				105F5DDC2CB411EC00303F10 /* Tag-CoreDataHelpers.swift */,
 				10C908632C79E27600644702 /* Main.xcdatamodeld */,
-				102645482CC117D900BCB096 /* Awards.json */,
+				102F81882CC3C87C000A1B0C /* Localizable.xcstrings */,
+				1026457C2CC3C63F00BCB096 /* Awards.json */,
 				102645492CC117D900BCB096 /* Colors.xcassets */,
 				10C908582C79E1AB00644702 /* Assets.xcassets */,
 				10C9085A2C79E1AB00644702 /* FeedbackAssistant.entitlements */,
@@ -144,7 +149,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					10C908502C79E1AA00644702 = {
 						CreatedOnToolsVersion = 15.4;
@@ -157,7 +162,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				"es-419",
+				it,
 			);
 			mainGroup = 10C908482C79E1AA00644702;
 			productRefGroup = 10C908522C79E1AA00644702 /* Products */;
@@ -175,8 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C9085D2C79E1AB00644702 /* Preview Assets.xcassets in Resources */,
+				102F81892CC3C87C000A1B0C /* Localizable.xcstrings in Resources */,
 				1026454A2CC117D900BCB096 /* Colors.xcassets in Resources */,
-				1026454B2CC117D900BCB096 /* Awards.json in Resources */,
+				1026457D2CC3C63F00BCB096 /* Awards.json in Resources */,
 				10C908592C79E1AB00644702 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,12 +215,26 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		1026457C2CC3C63F00BCB096 /* Awards.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1026457B2CC3C63F00BCB096 /* en */,
+				1026457E2CC3C64A00BCB096 /* es-419 */,
+				102F818A2CC3C892000A1B0C /* it */,
+			);
+			name = Awards.json;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		10C9085E2C79E1AB00644702 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -243,6 +264,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -266,6 +288,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -275,6 +298,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -304,6 +328,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -320,6 +345,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -331,6 +357,7 @@
 				CODE_SIGN_ENTITLEMENTS = FeedbackAssistant/FeedbackAssistant.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FeedbackAssistant/Preview Content\"";
 				DEVELOPMENT_TEAM = 9RP466MZ3W;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -370,6 +397,7 @@
 				CODE_SIGN_ENTITLEMENTS = FeedbackAssistant/FeedbackAssistant.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FeedbackAssistant/Preview Content\"";
 				DEVELOPMENT_TEAM = 9RP466MZ3W;
 				ENABLE_HARDENED_RUNTIME = YES;
