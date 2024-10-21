@@ -13,6 +13,11 @@
 		1026454F2CC119E800BCB096 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1026454E2CC119E800BCB096 /* AwardsView.swift */; };
 		1026457D2CC3C63F00BCB096 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 1026457C2CC3C63F00BCB096 /* Awards.json */; };
 		102F81892CC3C87C000A1B0C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 102F81882CC3C87C000A1B0C /* Localizable.xcstrings */; };
+		102F818C2CC67F5E000A1B0C /* SideBarView+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F818B2CC67F5E000A1B0C /* SideBarView+Toolbar.swift */; };
+		102F818E2CC681B5000A1B0C /* IssueView+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F818D2CC681B5000A1B0C /* IssueView+Toolbar.swift */; };
+		102F81902CC682A1000A1B0C /* ContentView+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F818F2CC682A1000A1B0C /* ContentView+Toolbar.swift */; };
+		102F81922CC6843D000A1B0C /* TagsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F81912CC6843D000A1B0C /* TagsMenuView.swift */; };
+		102F81942CC68576000A1B0C /* UserFilterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F81932CC68576000A1B0C /* UserFilterRow.swift */; };
 		105F5DDB2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */; };
 		105F5DDD2CB411EC00303F10 /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDC2CB411EC00303F10 /* Tag-CoreDataHelpers.swift */; };
 		105F5DDF2CB4228800303F10 /* IssueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDE2CB4228800303F10 /* IssueRow.swift */; };
@@ -38,6 +43,11 @@
 		1026457E2CC3C64A00BCB096 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Awards.json"; sourceTree = "<group>"; };
 		102F81882CC3C87C000A1B0C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		102F818A2CC3C892000A1B0C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = it; path = it.lproj/Awards.json; sourceTree = "<group>"; };
+		102F818B2CC67F5E000A1B0C /* SideBarView+Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SideBarView+Toolbar.swift"; sourceTree = "<group>"; };
+		102F818D2CC681B5000A1B0C /* IssueView+Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IssueView+Toolbar.swift"; sourceTree = "<group>"; };
+		102F818F2CC682A1000A1B0C /* ContentView+Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+Toolbar.swift"; sourceTree = "<group>"; };
+		102F81912CC6843D000A1B0C /* TagsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsMenuView.swift; sourceTree = "<group>"; };
+		102F81932CC68576000A1B0C /* UserFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterRow.swift; sourceTree = "<group>"; };
 		105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		105F5DDC2CB411EC00303F10 /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		105F5DDE2CB4228800303F10 /* IssueRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRow.swift; sourceTree = "<group>"; };
@@ -91,13 +101,18 @@
 				10C908542C79E1AA00644702 /* FeedbackAssistantApp.swift */,
 				10C9086D2C79FC7900644702 /* Filter.swift */,
 				10C908562C79E1AA00644702 /* ContentView.swift */,
+				102F818F2CC682A1000A1B0C /* ContentView+Toolbar.swift */,
 				1026454C2CC118AD00BCB096 /* Award.swift */,
 				1026454E2CC119E800BCB096 /* AwardsView.swift */,
 				105F5DDE2CB4228800303F10 /* IssueRow.swift */,
 				10C908662C79E5D800644702 /* DataController.swift */,
 				105F5DE02CB42BF800303F10 /* IssueView.swift */,
+				102F81912CC6843D000A1B0C /* TagsMenuView.swift */,
+				102F818D2CC681B5000A1B0C /* IssueView+Toolbar.swift */,
 				105F5DE22CB42C0600303F10 /* NoIssueView.swift */,
 				10C908692C79FACC00644702 /* SideBarView.swift */,
+				102F818B2CC67F5E000A1B0C /* SideBarView+Toolbar.swift */,
+				102F81932CC68576000A1B0C /* UserFilterRow.swift */,
 				102645462CC110EA00BCB096 /* Bundle-Decodable.swift */,
 				10C9086B2C79FAE200644702 /* DetailView.swift */,
 				105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */,
@@ -135,6 +150,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				102F81972CC689A7000A1B0C /* PBXTargetDependency */,
 			);
 			name = FeedbackAssistant;
 			productName = FeedbackAssistant;
@@ -166,6 +182,9 @@
 				it,
 			);
 			mainGroup = 10C908482C79E1AA00644702;
+			packageReferences = (
+				102F81952CC688F5000A1B0C /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
 			productRefGroup = 10C908522C79E1AA00644702 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -196,13 +215,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C9086E2C79FC7900644702 /* Filter.swift in Sources */,
+				102F81922CC6843D000A1B0C /* TagsMenuView.swift in Sources */,
 				1026454D2CC118AD00BCB096 /* Award.swift in Sources */,
+				102F81942CC68576000A1B0C /* UserFilterRow.swift in Sources */,
+				102F818E2CC681B5000A1B0C /* IssueView+Toolbar.swift in Sources */,
 				1026454F2CC119E800BCB096 /* AwardsView.swift in Sources */,
 				105F5DDD2CB411EC00303F10 /* Tag-CoreDataHelpers.swift in Sources */,
 				10C908652C79E27600644702 /* Main.xcdatamodeld in Sources */,
 				105F5DDB2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift in Sources */,
 				102645472CC110EA00BCB096 /* Bundle-Decodable.swift in Sources */,
+				102F818C2CC67F5E000A1B0C /* SideBarView+Toolbar.swift in Sources */,
 				10C9086C2C79FAE200644702 /* DetailView.swift in Sources */,
+				102F81902CC682A1000A1B0C /* ContentView+Toolbar.swift in Sources */,
 				10C908672C79E5D800644702 /* DataController.swift in Sources */,
 				10C908572C79E1AA00644702 /* ContentView.swift in Sources */,
 				10C9086A2C79FACC00644702 /* SideBarView.swift in Sources */,
@@ -214,6 +238,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		102F81972CC689A7000A1B0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 102F81962CC689A7000A1B0C /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1026457C2CC3C63F00BCB096 /* Awards.json */ = {
@@ -451,6 +482,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		102F81952CC688F5000A1B0C /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.57.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		102F81962CC689A7000A1B0C /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 102F81952CC688F5000A1B0C /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		10C908632C79E27600644702 /* Main.xcdatamodeld */ = {

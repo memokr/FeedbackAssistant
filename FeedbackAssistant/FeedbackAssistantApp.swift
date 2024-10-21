@@ -11,11 +11,10 @@ import SwiftUI
 struct FeedbackAssistantApp: App {
     @StateObject var dataController = DataController()
     @Environment(\.scenePhase) var scenePhase
-    
-    
+
     var body: some Scene {
         WindowGroup {
-            NavigationSplitView{
+            NavigationSplitView {
                 SideBarView()
             } content: {
                 ContentView()

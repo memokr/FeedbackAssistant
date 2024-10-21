@@ -9,20 +9,20 @@ import SwiftUI
 
 struct AwardsView: View {
     @EnvironmentObject var dataController: DataController
-    
+
     @State private var selectedAward = Award.example
     @State private var showingAwardDetails = false
-    
-    var columns: [GridItem]{
+
+    var columns: [GridItem] {
         [GridItem(.adaptive(minimum: 100, maximum: 100))]
     }
-    
+
     var body: some View {
-        NavigationStack{
-            ScrollView{
+        NavigationStack {
+            ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(Award.allAwards) { award in
-                        Button{
+                        Button {
                             selectedAward = award
                             showingAwardDetails = true
                         } label: {
@@ -31,27 +31,35 @@ struct AwardsView: View {
                                 .scaledToFit()
                                 .padding()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(dataController.hasEarned(award: award) ? Color(award.color) : .secondary.opacity(0.5))
+                                .foregroundColor(color(for: award))
                         }
-                        .accessibilityLabel(dataController.hasEarned(award: award) ? "Unlocked \(award.name)" : "Locked")
+                        .accessibilityLabel(label(for: award))
                         .accessibilityHint(award.description)
                     }
                 }
             }
             .navigationTitle("Awards")
         }
-        .alert(awardsTitle, isPresented: $showingAwardDetails){
+        .alert(awardsTitle, isPresented: $showingAwardDetails) {
         } message: {
             Text(selectedAward.description)
         }
     }
-    
+
     var awardsTitle: String {
         if dataController.hasEarned(award: selectedAward) {
             return String(format: NSLocalizedString("Unlocked: %@", comment: ""), selectedAward.name)
         } else {
             return NSLocalizedString("Locked", comment: "")
         }
+    }
+
+    func color(for award: Award) -> Color {
+        dataController.hasEarned(award: award) ? Color(award.color) : .secondary.opacity(0.5)
+    }
+
+    func label(for award: Award) -> LocalizedStringKey {
+        dataController.hasEarned(award: award) ? "Unlocked \(award.name)" : "Locked"
     }
 }
 
