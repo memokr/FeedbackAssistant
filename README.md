@@ -1,14 +1,15 @@
-# Feedback Assistant Clone
-
+# Feedback Assistant Clone 
+<img src="https://github.com/user-attachments/assets/1019f3fe-e90f-4ad1-b81c-8155d55b3c2d" alt="FeedbackAssistant" width="100"/> 
+<br>
 This project is a clone of Apple's Feedback Assistant native app, built using SwiftUI, Core Data for persistence, with support for localization, comprehensive code documentation, and adherence to SwiftLint for clean, maintainable code.
+<br>
 
 ## Features
 
 - **Feedback Management**: Create, update, and delete feedback entries.
-- **SwiftUI**: Entire app UI is built using SwiftUI for modern and responsive design.
 - **Core Data**: Persistent storage of feedback data using Apple's Core Data framework.
-- **Localization**: Support for multiple languages using localization for an international user experience.
-- **Code Documentation**: Detailed code documentation for each component to ensure clarity and maintainability.
+- **Localization**: Support for multiple languages (English, Spanish, Italian).
+- **Code Documentation**: Detailed code documentation to ensure clarity and maintainability.
 - **SwiftLint**: Integrated SwiftLint for enforcing Swift code style and quality standards.
 
 ## Technologies
