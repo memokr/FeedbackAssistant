@@ -464,7 +464,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Filtrar problemas, # para agregar etiquetas"
+            "value" : "Filtra o escribe # para agregar etiquetas"
           }
         },
         "it" : {

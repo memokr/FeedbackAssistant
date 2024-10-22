@@ -19,7 +19,11 @@ enum Status {
     case closed
 }
 
+/// An environment singleton responsible for managing our Core Data stack, including handling saving
+/// counting fetch requests, tracking orders, and dealing with sample data.
 class DataController: ObservableObject {
+
+    /// The lone CloudKit container used to store all our data.
     let container: NSPersistentCloudKitContainer
 
     @Published var selectedFilter: Filter? = Filter.all
@@ -52,22 +56,37 @@ class DataController: ObservableObject {
         }
         return (try? container.viewContext.fetch(request).sorted()) ?? []
     }
+
+    /// Initializes a data controller, either in memory (for testing use such as previewing),
+    /// or on permanent storage (for use in regular app runs). Defaults to permanent storage.
+    /// - Parameter inMemory: Whether to store this data in temporary memory or not
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Main")
+
+        // For testing and previewing purposes, we create a
+        // temporary, in memory database by writing to /dev/null
+        // so our data is destroyed after the app finishes running.
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(filePath: "/dev/Null")
         }
+
         container.viewContext.automaticallyMergesChangesFromParent = true
         container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
+
+        // Make sure that we watch iCloud for all changes to make
+        // absolutely sure we keep our local UI in sync when a
+        // remote change happens
         container.persistentStoreDescriptions.first?.setOption(
             true as NSNumber,
             forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey
         )
+
         NotificationCenter.default.addObserver(
             forName: .NSPersistentStoreRemoteChange,
             object: container.persistentStoreCoordinator,
             queue: .main, using: remoteStoreChanged
         )
+
         container.loadPersistentStores { _, error in
             if let error {
                 fatalError("Fatal error loading store: \(error.localizedDescription)")
@@ -95,6 +114,10 @@ class DataController: ObservableObject {
         }
         try? viewContext.save()
     }
+
+    /// Saves our Core Data context if there are changes. This silently ignores
+    /// any errors caused by saving, but this should be fine because
+    /// all our attributes are optional.
     func save() {
         saveTask?.cancel()
         if container.viewContext.hasChanges {
@@ -113,14 +136,22 @@ class DataController: ObservableObject {
         container.viewContext.delete(object)
         save()
     }
+
     private func delete(_ fecthRequest: NSFetchRequest<NSFetchRequestResult>) {
+
         let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fecthRequest)
+
         batchDeleteRequest.resultType = .resultTypeObjectIDs
+
+        // IMPORTANT ⚠️: When performing a batch delete we need to make sure we read the result back
+        // then merge all the changes from that result back into our live view context
+        // so that the two stay in sync.
         if let delete = try? container.viewContext.execute(batchDeleteRequest) as? NSBatchDeleteResult {
             let changes = [NSDeletedObjectsKey: delete.result as? [NSManagedObjectID] ?? []]
             NSManagedObjectContext.mergeChanges(fromRemoteContextSave: changes, into: [container.viewContext])
         }
     }
+
     func deleteAll() {
         let request1: NSFetchRequest<NSFetchRequestResult> = Tag.fetchRequest()
         delete(request1)
@@ -128,6 +159,7 @@ class DataController: ObservableObject {
         delete(request2)
         save()
     }
+
     func missingTags(from issue: Issue) -> [Tag] {
         let request = Tag.fetchRequest()
         let allTags = (try? container.viewContext.fetch(request)) ?? []
@@ -135,9 +167,14 @@ class DataController: ObservableObject {
         let difference = allTagsSet.symmetricDifference(issue.issueTags)
         return difference.sorted()
     }
+
+
+    /// Runs a fetch request with various predicates that filter the user's 
+    /// - Returns: <#description#>
     func issuesForSeletedFilter() -> [Issue] {
         let filter = selectedFilter ?? .all
         var predicates = [NSPredicate]()
+
         if let tag = filter.tag {
             let tagPredicate = NSPredicate(format: "tags CONTAINS %@", tag)
             predicates.append(tagPredicate)
@@ -145,29 +182,39 @@ class DataController: ObservableObject {
             let datePredicate = NSPredicate(format: "modificationDate > %@", filter.minModificationDate as NSDate)
             predicates.append(datePredicate)
         }
+
         let trimmedFilterText = filterText.trimmingCharacters(in: .whitespaces)
+
         if trimmedFilterText.isEmpty == false {
             let titlePredicate = NSPredicate(format: "title CONTAINS[c] %@", trimmedFilterText)
+
             let contentPredicate = NSPredicate(format: "content CONTAINS[c] %@", trimmedFilterText)
-        let combinedPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: [titlePredicate, contentPredicate])
-            predicates.append(combinedPredicate)
+
+            let combinedPredicate = NSCompoundPredicate(
+                orPredicateWithSubpredicates: [titlePredicate, contentPredicate]
+            )
+                predicates.append(combinedPredicate)
         }
+
         if filterTokens.isEmpty == false {
             for _ in filterTokens {
                 let tokenPredicate = NSPredicate(format: "tags CONTAINS %@", filterTokens)
                 predicates.append(tokenPredicate)
             }
         }
+
         if filterEnabled {
             if filterPriority >= 0 {
                 let priorityFilter = NSPredicate(format: "priority = %d", filterPriority)
                 predicates.append(priorityFilter)
             }
+
             if filterStatus != .all {
                 let lookedForClosed = filterStatus == .closed
                 let statusFilter = NSPredicate(format: "completed = %@", NSNumber(value: lookedForClosed))
                 predicates.append(statusFilter)
             }
+
         }
         let request = Issue.fetchRequest()
         request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: predicates)
@@ -175,27 +222,36 @@ class DataController: ObservableObject {
         let allIssues = (try? container.viewContext.fetch(request)) ?? []
         return allIssues
     }
+
     func newTag() {
         let tag = Tag(context: container.viewContext)
         tag.id = UUID()
         tag.name = NSLocalizedString("New Tag", comment: "Create a new tag")
         save()
     }
+
     func newIssue() {
         let issue = Issue(context: container.viewContext)
         issue.title =  NSLocalizedString("New Issue", comment: "Create a new issue")
         issue.creationDate = .now
         issue.priority = 1
+
+        // If we are currently browsing a user-created tag, immediately
+        // add this new issue to the tag otherwise it won't appear in
+        // the list of issues they see.
         if let tag = selectedFilter?.tag {
             issue.addToTags(tag)
         }
 
         save()
+
         selectedIssue = issue
     }
+
     func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
         (try? container.viewContext.count(for: fetchRequest)) ?? 0
     }
+
     func hasEarned(award: Award) -> Bool {
         switch award.criterion {
         case "issues":
