@@ -5,18 +5,19 @@
 //  Created by Guillermo Kramsky on 22/10/24.
 //
 
-import Testing
+import CoreData
+import XCTest
 @testable import FeedbackAssistant
 
 
-@Test func colorsExists() {
-    let allColors = ["Dark Blue", "Dark Gray", "Gold", "Gray", "Green", "Light Blue", "Midnight", "Orange", "Pink", "Purple", "Red", "Teal"]
+class BaseTestCase: XCTestCase {
+    var dataController: DataController!
+    var managedObjectContext: NSManagedObjectContext!
 
-    for color in allColors {
-        #expect(color != nil)
+    override func setUpWithError() throws {
+        dataController = DataController(inMemory: true)
+        managedObjectContext = dataController.container.viewContext
     }
 }
 
-@Test func awardsLoadCorrectly() {
-    #expect(Award.allAwards.isEmpty == false,"Failed to load awards from JSON")
-}
+
