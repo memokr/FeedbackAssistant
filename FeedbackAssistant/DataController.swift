@@ -126,7 +126,12 @@ class DataController: ObservableObject {
                 tag.addToIssues(issue)
             }
         }
+
+        #if DEBUG
+        #else
         try? viewContext.save()
+        #endif
+
     }
 
     /// Saves our Core Data context if there are changes. This silently ignores
