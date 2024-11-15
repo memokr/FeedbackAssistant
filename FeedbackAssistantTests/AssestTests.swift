@@ -21,3 +21,4 @@ struct AssestTests {
         #expect(Award.allAwards.isEmpty == false,"Failed to load awards from JSON")
     }
 }
+    

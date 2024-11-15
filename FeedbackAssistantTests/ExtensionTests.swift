@@ -85,4 +85,57 @@ struct ExtensionTests {
 
         #expect([issue3, issue1, issue2] == sorted, "Sorting issue arrays should use name then creation date")
     }
+
+    @Test func tagIdUnwrap() {
+        let tag = Tag(context: managedObjectContext)
+
+        tag.id = UUID()
+        #expect(tag.tagID == tag.id, "Changing id should also change tagID")
+    }
+
+    @Test func tagNameUnwrap() {
+        let tag = Tag(context: managedObjectContext)
+
+        tag.name = "Example tag"
+        #expect(tag.tagName == tag.name, "Changing name should also change tagName")
+    }
+
+    @Test func tagActiveIssues() {
+        let tag = Tag(context: managedObjectContext)
+        let issue = Issue(context: managedObjectContext)
+
+        #expect(tag.tagActiveIssues.count == 0, "A new tag should have 0 active issues.")
+
+        tag.addToIssues(issue)
+        #expect(tag.tagActiveIssues.count == 1, "Adding an issue to a tag should increase the active issue count.")
+
+        issue.completed = true
+
+        #expect(tag.tagActiveIssues.count == 0, "A new tag with 1 completed issue should have 0 active issues.")
+    }
+
+    @Test func tagSortingIsStable() {
+        let tag1 = Tag(context: managedObjectContext)
+        tag1.name = "B tag"
+        tag1.id = UUID()
+
+        let tag2 = Tag(context: managedObjectContext)
+        tag2.name = "B tag"
+        tag2.id = UUID(uuidString: "FFFFFFFF-FFFF-4526-B53A-55F1B0B895A1")
+
+        let tag3 = Tag(context: managedObjectContext)
+        tag3.name = "A tag"
+        tag3.id = UUID()
+
+        let allTags = [tag1, tag2, tag3]
+        let sortedTags = allTags.sorted()
+
+        #expect([tag3, tag1, tag2] == sortedTags, "Sorting tag array should use name then UUID string.")
+    }
+
+    @Test func bundleDecodingAwards() {
+        let awards = Bundle.main.decode("Awards.json", as: [Award].self)
+        #expect(!awards.isEmpty, "Awards.json should decode to a non empty array")
+    }
+    
 }

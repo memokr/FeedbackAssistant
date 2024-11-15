@@ -31,7 +31,7 @@ struct SideBarView: View {
                         Label(filter.name, systemImage: filter.icon)
                     }
                 }
-            }
+            } 
             Section("Tags") {
                 ForEach(tagFilters) { filter in
                     UserFilterRow(filter: filter, rename: rename, delete: delete)
