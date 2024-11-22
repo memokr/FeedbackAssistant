@@ -41,13 +41,35 @@
                ReferencedContainer = "container:FeedbackAssistant.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "103C6E992CE7977800EFB389"
+               BuildableName = "FeedbackAssistantUITests.xctest"
+               BlueprintName = "FeedbackAssistantUITests"
+               ReferencedContainer = "container:FeedbackAssistant.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "103C6EAA2CE79C9500EFB389"
+               BuildableName = "FeedbackAssistantUITestssfjd.xctest"
+               BlueprintName = "FeedbackAssistantUITestssfjd"
+               ReferencedContainer = "container:FeedbackAssistant.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = "es-419"
+      language = "en"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -65,6 +87,10 @@
             ReferencedContainer = "container:FeedbackAssistant.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <LocationScenarioReference
+         identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
+         referenceType = "1">
+      </LocationScenarioReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
