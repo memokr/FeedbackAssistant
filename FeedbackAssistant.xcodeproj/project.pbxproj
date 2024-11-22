@@ -18,6 +18,9 @@
 		102F81902CC682A1000A1B0C /* ContentView+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F818F2CC682A1000A1B0C /* ContentView+Toolbar.swift */; };
 		102F81922CC6843D000A1B0C /* TagsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F81912CC6843D000A1B0C /* TagsMenuView.swift */; };
 		102F81942CC68576000A1B0C /* UserFilterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F81932CC68576000A1B0C /* UserFilterRow.swift */; };
+		1057F8752CF0B7B10026AEC9 /* SideBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057F8742CF0B7B10026AEC9 /* SideBarViewModel.swift */; };
+		1057F8772CF0CD8F0026AEC9 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057F8762CF0CD8F0026AEC9 /* ContentViewModel.swift */; };
+		1057F8792CF0CF880026AEC9 /* IssueRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057F8782CF0CF880026AEC9 /* IssueRowViewModel.swift */; };
 		105F5DDB2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */; };
 		105F5DDD2CB411EC00303F10 /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDC2CB411EC00303F10 /* Tag-CoreDataHelpers.swift */; };
 		105F5DDF2CB4228800303F10 /* IssueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDE2CB4228800303F10 /* IssueRow.swift */; };
@@ -66,6 +69,9 @@
 		102F81912CC6843D000A1B0C /* TagsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsMenuView.swift; sourceTree = "<group>"; };
 		102F81932CC68576000A1B0C /* UserFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterRow.swift; sourceTree = "<group>"; };
 		103C6E9A2CE7977800EFB389 /* FeedbackAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedbackAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1057F8742CF0B7B10026AEC9 /* SideBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewModel.swift; sourceTree = "<group>"; };
+		1057F8762CF0CD8F0026AEC9 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		1057F8782CF0CF880026AEC9 /* IssueRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRowViewModel.swift; sourceTree = "<group>"; };
 		105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		105F5DDC2CB411EC00303F10 /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		105F5DDE2CB4228800303F10 /* IssueRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRow.swift; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 			children = (
 				10C9086D2C79FC7900644702 /* Filter.swift */,
 				10C908692C79FACC00644702 /* SideBarView.swift */,
+				1057F8742CF0B7B10026AEC9 /* SideBarViewModel.swift */,
 				102F818B2CC67F5E000A1B0C /* SideBarView+Toolbar.swift */,
 				102F81932CC68576000A1B0C /* UserFilterRow.swift */,
 			);
@@ -159,8 +166,10 @@
 			isa = PBXGroup;
 			children = (
 				10C908562C79E1AA00644702 /* ContentView.swift */,
+				1057F8762CF0CD8F0026AEC9 /* ContentViewModel.swift */,
 				102F818F2CC682A1000A1B0C /* ContentView+Toolbar.swift */,
 				105F5DDE2CB4228800303F10 /* IssueRow.swift */,
+				1057F8782CF0CF880026AEC9 /* IssueRowViewModel.swift */,
 			);
 			path = Issues;
 			sourceTree = "<group>";
@@ -396,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1057F8792CF0CF880026AEC9 /* IssueRowViewModel.swift in Sources */,
 				10C9086E2C79FC7900644702 /* Filter.swift in Sources */,
 				102F81922CC6843D000A1B0C /* TagsMenuView.swift in Sources */,
 				1026454D2CC118AD00BCB096 /* Award.swift in Sources */,
@@ -407,12 +417,14 @@
 				105F5DDB2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift in Sources */,
 				102645472CC110EA00BCB096 /* Bundle-Decodable.swift in Sources */,
 				102F818C2CC67F5E000A1B0C /* SideBarView+Toolbar.swift in Sources */,
+				1057F8752CF0B7B10026AEC9 /* SideBarViewModel.swift in Sources */,
 				10C9086C2C79FAE200644702 /* DetailView.swift in Sources */,
 				102F81902CC682A1000A1B0C /* ContentView+Toolbar.swift in Sources */,
 				10C908672C79E5D800644702 /* DataController.swift in Sources */,
 				10C908572C79E1AA00644702 /* ContentView.swift in Sources */,
 				10C9086A2C79FACC00644702 /* SideBarView.swift in Sources */,
 				105F5DE12CB42BF800303F10 /* IssueView.swift in Sources */,
+				1057F8772CF0CD8F0026AEC9 /* ContentViewModel.swift in Sources */,
 				105F5DE32CB42C0600303F10 /* NoIssueView.swift in Sources */,
 				105F5DDF2CB4228800303F10 /* IssueRow.swift in Sources */,
 				10C908552C79E1AA00644702 /* FeedbackAssistantApp.swift in Sources */,

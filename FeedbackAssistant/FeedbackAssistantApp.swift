@@ -15,9 +15,9 @@ struct FeedbackAssistantApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationSplitView {
-                SideBarView()
+                SideBarView(dataController: dataController)
             } content: {
-                ContentView()
+                ContentView(dataController: dataController)
             } detail: {
                 DetailView()
             }
