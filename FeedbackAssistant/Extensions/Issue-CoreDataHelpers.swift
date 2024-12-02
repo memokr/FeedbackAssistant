@@ -39,6 +39,11 @@ extension Issue {
         }
     }
 
+    var issueReminderTime: Date {
+        get { reminderTime ?? .now }
+        set { reminderTime = newValue }
+    }
+
     var issueTagsList: String {
         guard let tags else { return String(localized: "No tags") }
 

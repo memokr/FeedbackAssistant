@@ -26,6 +26,7 @@
 		105F5DDF2CB4228800303F10 /* IssueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDE2CB4228800303F10 /* IssueRow.swift */; };
 		105F5DE12CB42BF800303F10 /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DE02CB42BF800303F10 /* IssueView.swift */; };
 		105F5DE32CB42C0600303F10 /* NoIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DE22CB42C0600303F10 /* NoIssueView.swift */; };
+		10BF2A722CFDFED90075711D /* DataController+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF2A712CFDFED90075711D /* DataController+Notifications.swift */; };
 		10C908552C79E1AA00644702 /* FeedbackAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908542C79E1AA00644702 /* FeedbackAssistantApp.swift */; };
 		10C908572C79E1AA00644702 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908562C79E1AA00644702 /* ContentView.swift */; };
 		10C908592C79E1AB00644702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C908582C79E1AB00644702 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		105F5DE02CB42BF800303F10 /* IssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueView.swift; sourceTree = "<group>"; };
 		105F5DE22CB42C0600303F10 /* NoIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoIssueView.swift; sourceTree = "<group>"; };
 		10970AA32CC7A1AD00DD4642 /* FeedbackAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedbackAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10BF2A712CFDFED90075711D /* DataController+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController+Notifications.swift"; sourceTree = "<group>"; };
 		10C908512C79E1AA00644702 /* FeedbackAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C908542C79E1AA00644702 /* FeedbackAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAssistantApp.swift; sourceTree = "<group>"; };
 		10C908562C79E1AA00644702 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				10970A9A2CC79D3300DD4642 /* Configuration */,
 				10C908542C79E1AA00644702 /* FeedbackAssistantApp.swift */,
 				10C908662C79E5D800644702 /* DataController.swift */,
+				10BF2A712CFDFED90075711D /* DataController+Notifications.swift */,
 				102645492CC117D900BCB096 /* Colors.xcassets */,
 				10C908582C79E1AB00644702 /* Assets.xcassets */,
 				10C9085B2C79E1AB00644702 /* Preview Content */,
@@ -423,6 +426,7 @@
 				10C908672C79E5D800644702 /* DataController.swift in Sources */,
 				10C908572C79E1AA00644702 /* ContentView.swift in Sources */,
 				10C9086A2C79FACC00644702 /* SideBarView.swift in Sources */,
+				10BF2A722CFDFED90075711D /* DataController+Notifications.swift in Sources */,
 				105F5DE12CB42BF800303F10 /* IssueView.swift in Sources */,
 				1057F8772CF0CD8F0026AEC9 /* ContentViewModel.swift in Sources */,
 				105F5DE32CB42C0600303F10 /* NoIssueView.swift in Sources */,

@@ -252,6 +252,22 @@
         }
       }
     },
+    "Check Settings" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revisar Ajustes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlla Impostazioni"
+          }
+        }
+      }
+    },
     "Close Issue" : {
       "localizations" : {
         "es-419" : {
@@ -738,6 +754,22 @@
         }
       }
     },
+    "Oops!" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oops!"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oops!"
+          }
+        }
+      }
+    },
     "Open" : {
       "localizations" : {
         "es-419" : {
@@ -802,6 +834,38 @@
         }
       }
     },
+    "Reminder time" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora de recordatorio"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ora Promemoria"
+          }
+        }
+      }
+    },
+    "Reminders" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recordatorio"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Promemoria"
+          }
+        }
+      }
+    },
     "Rename" : {
       "localizations" : {
         "es-419" : {
@@ -830,6 +894,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rinomina tag"
+          }
+        }
+      }
+    },
+    "Show reminders" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar recordatorios"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra Promemoria"
           }
         }
       }
@@ -927,6 +1007,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tag"
+          }
+        }
+      }
+    },
+    "There was a problem setting your notifications. Please check your settings." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las notificaciones están desactivadas. Favor de revisar en ajustes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si è verificato un problema nell'impostare le notifiche. Controlla le tue impostazioni."
           }
         }
       }
