@@ -21,7 +21,7 @@ struct ContentView: View {
         .searchable(text: $viewModel.dataController.filterText,
                     tokens: $viewModel.dataController.filterTokens,
                     suggestedTokens: .constant(viewModel.dataController.suggestedFilterTokens),
-                    prompt: "Filter issues, or type # to add tags"
+                prompt: "Filter issues, or type # to add tags"
         ) { tag in
             Text(tag.tagName)
         }

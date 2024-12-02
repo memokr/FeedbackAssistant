@@ -97,7 +97,7 @@ final class FeedbackAssistantUITests: XCTestCase {
             
             award.tap()
             XCTAssertTrue(app.alerts["Locked"].exists, "There should be a locked alert showing this award.")
-            app.buttons["OK"].tap()
+                                    app.buttons["OK"].tap()
         }
     }
 }

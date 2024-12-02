@@ -29,6 +29,13 @@ struct IssueViewToolbar: View {
             } label: {
                 Label(isIssueCompleted, systemImage: "bubble.left.and.exclamationmark.bubble.right")
             }
+            .sensoryFeedback(trigger: issue.completed) { oldValue, newValue in
+                if newValue {
+                    .success
+                } else {
+                    nil
+                }
+            }
         } label: {
             Label("Actions", systemImage: "ellipsis.circle")
         }
