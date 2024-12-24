@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.requestReview) var requestReview
     @StateObject var viewModel: ViewModel
+    @State private var filterText: String = ""
 
     var body: some View {
         List(selection: $viewModel.dataController.selectedIssue) {
@@ -26,11 +28,25 @@ struct ContentView: View {
             Text(tag.tagName)
         }
         .toolbar(content: ContentViewToolbar.init)
+        .onAppear(perform: askForReview)
+        .onOpenURL(perform: openUrl)
     }
 
     init(dataController: DataController) {
         let viewModel = ViewModel(dataController: dataController)
         _viewModel = StateObject(wrappedValue: viewModel)
+    }
+
+    func askForReview() {
+        if viewModel.shouldRequestReview {
+            requestReview()
+        }
+    }
+
+    func openUrl(_ url: URL) {
+        if url.absoluteString.contains("newIssue") {
+            viewModel.dataController.newIssue()
+        }
     }
 }
 

@@ -11,6 +11,10 @@ extension ContentView {
     class ViewModel: ObservableObject {
         var dataController: DataController
 
+        var shouldRequestReview: Bool {
+            dataController.count(for: Tag.fetchRequest()) >= 6
+        }
+
         init(dataController: DataController) {
             self.dataController = dataController
         }
@@ -21,6 +25,6 @@ extension ContentView {
                 let item = issues[offset]
                 dataController.delete(item)
             }
-        } 
+        }
     }
 }

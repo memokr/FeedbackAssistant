@@ -21,11 +21,16 @@
 		1057F8752CF0B7B10026AEC9 /* SideBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057F8742CF0B7B10026AEC9 /* SideBarViewModel.swift */; };
 		1057F8772CF0CD8F0026AEC9 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057F8762CF0CD8F0026AEC9 /* ContentViewModel.swift */; };
 		1057F8792CF0CF880026AEC9 /* IssueRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057F8782CF0CF880026AEC9 /* IssueRowViewModel.swift */; };
+		105B78F62D07015D00490D07 /* StoreConfiguration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 105B78F52D07015D00490D07 /* StoreConfiguration.storekit */; };
+		105B78F82D07031800490D07 /* DataController-StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B78F72D07031800490D07 /* DataController-StoreKit.swift */; };
+		105B78FB2D070C9500490D07 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B78FA2D070C9500490D07 /* StoreView.swift */; };
 		105F5DDB2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */; };
 		105F5DDD2CB411EC00303F10 /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDC2CB411EC00303F10 /* Tag-CoreDataHelpers.swift */; };
 		105F5DDF2CB4228800303F10 /* IssueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDE2CB4228800303F10 /* IssueRow.swift */; };
 		105F5DE12CB42BF800303F10 /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DE02CB42BF800303F10 /* IssueView.swift */; };
 		105F5DE32CB42C0600303F10 /* NoIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DE22CB42C0600303F10 /* NoIssueView.swift */; };
+		106523452D1ACB990006C5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106523442D1ACB990006C5DA /* AppDelegate.swift */; };
+		106523472D1ACBA30006C5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106523462D1ACBA30006C5DA /* SceneDelegate.swift */; };
 		10BF2A722CFDFED90075711D /* DataController+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF2A712CFDFED90075711D /* DataController+Notifications.swift */; };
 		10C908552C79E1AA00644702 /* FeedbackAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908542C79E1AA00644702 /* FeedbackAssistantApp.swift */; };
 		10C908572C79E1AA00644702 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908562C79E1AA00644702 /* ContentView.swift */; };
@@ -73,11 +78,16 @@
 		1057F8742CF0B7B10026AEC9 /* SideBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewModel.swift; sourceTree = "<group>"; };
 		1057F8762CF0CD8F0026AEC9 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		1057F8782CF0CF880026AEC9 /* IssueRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRowViewModel.swift; sourceTree = "<group>"; };
+		105B78F52D07015D00490D07 /* StoreConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; name = StoreConfiguration.storekit; path = FeedbackAssistant/StoreConfiguration.storekit; sourceTree = SOURCE_ROOT; };
+		105B78F72D07031800490D07 /* DataController-StoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-StoreKit.swift"; sourceTree = "<group>"; };
+		105B78FA2D070C9500490D07 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		105F5DDC2CB411EC00303F10 /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		105F5DDE2CB4228800303F10 /* IssueRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRow.swift; sourceTree = "<group>"; };
 		105F5DE02CB42BF800303F10 /* IssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueView.swift; sourceTree = "<group>"; };
 		105F5DE22CB42C0600303F10 /* NoIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoIssueView.swift; sourceTree = "<group>"; };
+		106523442D1ACB990006C5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		106523462D1ACBA30006C5DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		10970AA32CC7A1AD00DD4642 /* FeedbackAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedbackAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BF2A712CFDFED90075711D /* DataController+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController+Notifications.swift"; sourceTree = "<group>"; };
 		10C908512C79E1AA00644702 /* FeedbackAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		105B78F92D070C7F00490D07 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				105B78FA2D070C9500490D07 /* StoreView.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		10970A982CC79D0300DD4642 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +165,7 @@
 			children = (
 				10C9085A2C79E1AB00644702 /* FeedbackAssistant.entitlements */,
 				10C908682C79F31000644702 /* Info.plist */,
+				105B78F52D07015D00490D07 /* StoreConfiguration.storekit */,
 				10C908632C79E27600644702 /* Main.xcdatamodeld */,
 			);
 			path = Configuration;
@@ -221,6 +240,7 @@
 		10C908532C79E1AA00644702 /* FeedbackAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				105B78F92D070C7F00490D07 /* Store */,
 				10970A9B2CC79F5100DD4642 /* Filters */,
 				10970A9C2CC79F5700DD4642 /* Issues */,
 				10970A9D2CC79F5F00DD4642 /* Editing */,
@@ -230,7 +250,10 @@
 				10970A9A2CC79D3300DD4642 /* Configuration */,
 				10C908542C79E1AA00644702 /* FeedbackAssistantApp.swift */,
 				10C908662C79E5D800644702 /* DataController.swift */,
+				106523442D1ACB990006C5DA /* AppDelegate.swift */,
+				106523462D1ACBA30006C5DA /* SceneDelegate.swift */,
 				10BF2A712CFDFED90075711D /* DataController+Notifications.swift */,
+				105B78F72D07031800490D07 /* DataController-StoreKit.swift */,
 				102645492CC117D900BCB096 /* Colors.xcassets */,
 				10C908582C79E1AB00644702 /* Assets.xcassets */,
 				10C9085B2C79E1AB00644702 /* Preview Content */,
@@ -384,6 +407,7 @@
 				1026454A2CC117D900BCB096 /* Colors.xcassets in Resources */,
 				1026457D2CC3C63F00BCB096 /* Awards.json in Resources */,
 				10C908592C79E1AB00644702 /* Assets.xcassets in Resources */,
+				105B78F62D07015D00490D07 /* StoreConfiguration.storekit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,16 +441,20 @@
 				1026454F2CC119E800BCB096 /* AwardsView.swift in Sources */,
 				105F5DDD2CB411EC00303F10 /* Tag-CoreDataHelpers.swift in Sources */,
 				10C908652C79E27600644702 /* Main.xcdatamodeld in Sources */,
+				105B78F82D07031800490D07 /* DataController-StoreKit.swift in Sources */,
 				105F5DDB2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift in Sources */,
 				102645472CC110EA00BCB096 /* Bundle-Decodable.swift in Sources */,
 				102F818C2CC67F5E000A1B0C /* SideBarView+Toolbar.swift in Sources */,
 				1057F8752CF0B7B10026AEC9 /* SideBarViewModel.swift in Sources */,
 				10C9086C2C79FAE200644702 /* DetailView.swift in Sources */,
+				106523472D1ACBA30006C5DA /* SceneDelegate.swift in Sources */,
 				102F81902CC682A1000A1B0C /* ContentView+Toolbar.swift in Sources */,
 				10C908672C79E5D800644702 /* DataController.swift in Sources */,
 				10C908572C79E1AA00644702 /* ContentView.swift in Sources */,
+				105B78FB2D070C9500490D07 /* StoreView.swift in Sources */,
 				10C9086A2C79FACC00644702 /* SideBarView.swift in Sources */,
 				10BF2A722CFDFED90075711D /* DataController+Notifications.swift in Sources */,
+				106523452D1ACB990006C5DA /* AppDelegate.swift in Sources */,
 				105F5DE12CB42BF800303F10 /* IssueView.swift in Sources */,
 				1057F8772CF0CD8F0026AEC9 /* ContentViewModel.swift in Sources */,
 				105F5DE32CB42C0600303F10 /* NoIssueView.swift in Sources */,

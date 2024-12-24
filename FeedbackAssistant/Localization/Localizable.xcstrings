@@ -236,6 +236,9 @@
         }
       }
     },
+    "Buy Now" : {
+
+    },
     "Cancel" : {
       "localizations" : {
         "es-419" : {
@@ -540,6 +543,9 @@
         }
       }
     },
+    "In-app purchases are disabled" : {
+
+    },
     "Issues" : {
       "comment" : "CONTENTVIEW",
       "localizations" : {
@@ -556,6 +562,9 @@
           }
         }
       }
+    },
+    "Loading" : {
+
     },
     "Locked" : {
       "localizations" : {
@@ -898,6 +907,9 @@
         }
       }
     },
+    "Restore Purchases" : {
+
+    },
     "Show reminders" : {
       "localizations" : {
         "es-419" : {
@@ -945,6 +957,9 @@
           }
         }
       }
+    },
+    "Sorry there was an error loading our store." : {
+
     },
     "Sort By" : {
       "comment" : "Adjust the order issues are shown",
@@ -1043,6 +1058,9 @@
         }
       }
     },
+    "Try again" : {
+
+    },
     "Turn Filter Off" : {
       "comment" : "Disables filtering",
       "localizations" : {
@@ -1108,6 +1126,9 @@
           }
         }
       }
+    },
+    "You can't purchase the premium unlock because in-app purchases are disabled on this device." : {
+
     }
   },
   "version" : "1.0"
