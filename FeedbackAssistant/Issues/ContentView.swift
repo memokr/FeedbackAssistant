@@ -12,6 +12,8 @@ struct ContentView: View {
     @StateObject var viewModel: ViewModel
     @State private var filterText: String = ""
 
+    private let newIssueActivity = "com.guillermokramsky.FeedbackAssistant.newIssue"
+
     var body: some View {
         List(selection: $viewModel.dataController.selectedIssue) {
             ForEach(viewModel.dataController.issuesForSeletedFilter()) { issue in
@@ -30,6 +32,11 @@ struct ContentView: View {
         .toolbar(content: ContentViewToolbar.init)
         .onAppear(perform: askForReview)
         .onOpenURL(perform: openUrl)
+        .userActivity(newIssueActivity) { activity in
+            activity.isEligibleForPrediction = true
+            activity.title = "New Issue"
+        }
+        .onContinueUserActivity(newIssueActivity, perform: resumeActivity)
     }
 
     init(dataController: DataController) {
@@ -47,6 +54,10 @@ struct ContentView: View {
         if url.absoluteString.contains("newIssue") {
             viewModel.dataController.newIssue()
         }
+    }
+
+    func resumeActivity(_ activity: NSUserActivity) {
+        viewModel.dataController.newIssue()
     }
 }
 

@@ -29,6 +29,16 @@
 		105F5DDF2CB4228800303F10 /* IssueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDE2CB4228800303F10 /* IssueRow.swift */; };
 		105F5DE12CB42BF800303F10 /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DE02CB42BF800303F10 /* IssueView.swift */; };
 		105F5DE32CB42C0600303F10 /* NoIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DE22CB42C0600303F10 /* NoIssueView.swift */; };
+		10601A0C2D1D8C53003F0F9C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10601A0B2D1D8C53003F0F9C /* WidgetKit.framework */; };
+		10601A0E2D1D8C53003F0F9C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10601A0D2D1D8C53003F0F9C /* SwiftUI.framework */; };
+		10601A192D1D8C55003F0F9C /* FeedbackAssistantWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 10601A092D1D8C53003F0F9C /* FeedbackAssistantWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		10601A1F2D1D8DF4003F0F9C /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10C908632C79E27600644702 /* Main.xcdatamodeld */; };
+		10601A202D1D8E15003F0F9C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908662C79E5D800644702 /* DataController.swift */; };
+		10601A212D1D8E32003F0F9C /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDC2CB411EC00303F10 /* Tag-CoreDataHelpers.swift */; };
+		10601A222D1D8E32003F0F9C /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */; };
+		10601A232D1D8E89003F0F9C /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9086D2C79FC7900644702 /* Filter.swift */; };
+		10601A262D1D8EDF003F0F9C /* DataController-StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B78F72D07031800490D07 /* DataController-StoreKit.swift */; };
+		10601A282D1D9163003F0F9C /* DataController-Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10601A272D1D9163003F0F9C /* DataController-Awards.swift */; };
 		106523452D1ACB990006C5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106523442D1ACB990006C5DA /* AppDelegate.swift */; };
 		106523472D1ACBA30006C5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106523462D1ACBA30006C5DA /* SceneDelegate.swift */; };
 		10BF2A722CFDFED90075711D /* DataController+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF2A712CFDFED90075711D /* DataController+Notifications.swift */; };
@@ -51,6 +61,13 @@
 			remoteGlobalIDString = 10C908502C79E1AA00644702;
 			remoteInfo = FeedbackAssistant;
 		};
+		10601A172D1D8C55003F0F9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10C908492C79E1AA00644702 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10601A082D1D8C53003F0F9C;
+			remoteInfo = FeedbackAssistantWidgetExtension;
+		};
 		10970AA72CC7A1AD00DD4642 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 10C908492C79E1AA00644702 /* Project object */;
@@ -59,6 +76,20 @@
 			remoteInfo = FeedbackAssistant;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		10601A1A2D1D8C55003F0F9C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				10601A192D1D8C55003F0F9C /* FeedbackAssistantWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		102645462CC110EA00BCB096 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
@@ -86,6 +117,12 @@
 		105F5DDE2CB4228800303F10 /* IssueRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRow.swift; sourceTree = "<group>"; };
 		105F5DE02CB42BF800303F10 /* IssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueView.swift; sourceTree = "<group>"; };
 		105F5DE22CB42C0600303F10 /* NoIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoIssueView.swift; sourceTree = "<group>"; };
+		10601A092D1D8C53003F0F9C /* FeedbackAssistantWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FeedbackAssistantWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		10601A0B2D1D8C53003F0F9C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		10601A0D2D1D8C53003F0F9C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		10601A272D1D9163003F0F9C /* DataController-Awards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Awards.swift"; sourceTree = "<group>"; };
+		10601A292D1D921C003F0F9C /* FeedbackAssistantDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedbackAssistantDebug.entitlements; sourceTree = "<group>"; };
+		10601A2A2D1D930B003F0F9C /* FeedbackAssistantWidgetExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedbackAssistantWidgetExtensionDebug.entitlements; sourceTree = "<group>"; };
 		106523442D1ACB990006C5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		106523462D1ACBA30006C5DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		10970AA32CC7A1AD00DD4642 /* FeedbackAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedbackAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,8 +141,19 @@
 		10C9086D2C79FC7900644702 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		10601A1D2D1D8C55003F0F9C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 10601A082D1D8C53003F0F9C /* FeedbackAssistantWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		103C6E9B2CE7977800EFB389 /* FeedbackAssistantUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FeedbackAssistantUITests; sourceTree = "<group>"; };
+		10601A0F2D1D8C53003F0F9C /* FeedbackAssistantWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (10601A1D2D1D8C55003F0F9C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = FeedbackAssistantWidget; sourceTree = "<group>"; };
 		10970AA42CC7A1AD00DD4642 /* FeedbackAssistantTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FeedbackAssistantTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -114,6 +162,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10601A062D1D8C53003F0F9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10601A0E2D1D8C53003F0F9C /* SwiftUI.framework in Frameworks */,
+				10601A0C2D1D8C53003F0F9C /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +197,15 @@
 				105B78FA2D070C9500490D07 /* StoreView.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		10601A0A2D1D8C53003F0F9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10601A0B2D1D8C53003F0F9C /* WidgetKit.framework */,
+				10601A0D2D1D8C53003F0F9C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		10970A982CC79D0300DD4642 /* Localization */ = {
@@ -220,9 +286,12 @@
 		10C908482C79E1AA00644702 = {
 			isa = PBXGroup;
 			children = (
+				10601A2A2D1D930B003F0F9C /* FeedbackAssistantWidgetExtensionDebug.entitlements */,
 				10C908532C79E1AA00644702 /* FeedbackAssistant */,
 				10970AA42CC7A1AD00DD4642 /* FeedbackAssistantTests */,
 				103C6E9B2CE7977800EFB389 /* FeedbackAssistantUITests */,
+				10601A0F2D1D8C53003F0F9C /* FeedbackAssistantWidget */,
+				10601A0A2D1D8C53003F0F9C /* Frameworks */,
 				10C908522C79E1AA00644702 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -233,6 +302,7 @@
 				10C908512C79E1AA00644702 /* FeedbackAssistant.app */,
 				10970AA32CC7A1AD00DD4642 /* FeedbackAssistantTests.xctest */,
 				103C6E9A2CE7977800EFB389 /* FeedbackAssistantUITests.xctest */,
+				10601A092D1D8C53003F0F9C /* FeedbackAssistantWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,6 +310,7 @@
 		10C908532C79E1AA00644702 /* FeedbackAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				10601A292D1D921C003F0F9C /* FeedbackAssistantDebug.entitlements */,
 				105B78F92D070C7F00490D07 /* Store */,
 				10970A9B2CC79F5100DD4642 /* Filters */,
 				10970A9C2CC79F5700DD4642 /* Issues */,
@@ -254,6 +325,7 @@
 				106523462D1ACBA30006C5DA /* SceneDelegate.swift */,
 				10BF2A712CFDFED90075711D /* DataController+Notifications.swift */,
 				105B78F72D07031800490D07 /* DataController-StoreKit.swift */,
+				10601A272D1D9163003F0F9C /* DataController-Awards.swift */,
 				102645492CC117D900BCB096 /* Colors.xcassets */,
 				10C908582C79E1AB00644702 /* Assets.xcassets */,
 				10C9085B2C79E1AB00644702 /* Preview Content */,
@@ -295,6 +367,28 @@
 			productReference = 103C6E9A2CE7977800EFB389 /* FeedbackAssistantUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		10601A082D1D8C53003F0F9C /* FeedbackAssistantWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10601A1E2D1D8C55003F0F9C /* Build configuration list for PBXNativeTarget "FeedbackAssistantWidgetExtension" */;
+			buildPhases = (
+				10601A052D1D8C53003F0F9C /* Sources */,
+				10601A062D1D8C53003F0F9C /* Frameworks */,
+				10601A072D1D8C53003F0F9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				10601A0F2D1D8C53003F0F9C /* FeedbackAssistantWidget */,
+			);
+			name = FeedbackAssistantWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = FeedbackAssistantWidgetExtension;
+			productReference = 10601A092D1D8C53003F0F9C /* FeedbackAssistantWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		10970AA22CC7A1AD00DD4642 /* FeedbackAssistantTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10970AA92CC7A1AD00DD4642 /* Build configuration list for PBXNativeTarget "FeedbackAssistantTests" */;
@@ -325,11 +419,13 @@
 				10C9084D2C79E1AA00644702 /* Sources */,
 				10C9084E2C79E1AA00644702 /* Frameworks */,
 				10C9084F2C79E1AA00644702 /* Resources */,
+				10601A1A2D1D8C55003F0F9C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				102F81972CC689A7000A1B0C /* PBXTargetDependency */,
+				10601A182D1D8C55003F0F9C /* PBXTargetDependency */,
 			);
 			name = FeedbackAssistant;
 			productName = FeedbackAssistant;
@@ -343,12 +439,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					103C6E992CE7977800EFB389 = {
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = 10C908502C79E1AA00644702;
+					};
+					10601A082D1D8C53003F0F9C = {
+						CreatedOnToolsVersion = 16.1;
 					};
 					10970AA22CC7A1AD00DD4642 = {
 						CreatedOnToolsVersion = 16.0;
@@ -379,12 +478,20 @@
 				10C908502C79E1AA00644702 /* FeedbackAssistant */,
 				10970AA22CC7A1AD00DD4642 /* FeedbackAssistantTests */,
 				103C6E992CE7977800EFB389 /* FeedbackAssistantUITests */,
+				10601A082D1D8C53003F0F9C /* FeedbackAssistantWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		103C6E982CE7977800EFB389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10601A072D1D8C53003F0F9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,6 +528,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		10601A052D1D8C53003F0F9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10601A232D1D8E89003F0F9C /* Filter.swift in Sources */,
+				10601A1F2D1D8DF4003F0F9C /* Main.xcdatamodeld in Sources */,
+				10601A202D1D8E15003F0F9C /* DataController.swift in Sources */,
+				10601A262D1D8EDF003F0F9C /* DataController-StoreKit.swift in Sources */,
+				10601A212D1D8E32003F0F9C /* Tag-CoreDataHelpers.swift in Sources */,
+				10601A222D1D8E32003F0F9C /* Issue-CoreDataHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10970A9F2CC7A1AD00DD4642 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10601A282D1D9163003F0F9C /* DataController-Awards.swift in Sources */,
 				1057F8792CF0CF880026AEC9 /* IssueRowViewModel.swift in Sources */,
 				10C9086E2C79FC7900644702 /* Filter.swift in Sources */,
 				102F81922CC6843D000A1B0C /* TagsMenuView.swift in Sources */,
@@ -474,6 +595,11 @@
 			isa = PBXTargetDependency;
 			target = 10C908502C79E1AA00644702 /* FeedbackAssistant */;
 			targetProxy = 103C6EA02CE7977800EFB389 /* PBXContainerItemProxy */;
+		};
+		10601A182D1D8C55003F0F9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10601A082D1D8C53003F0F9C /* FeedbackAssistantWidgetExtension */;
+			targetProxy = 10601A172D1D8C55003F0F9C /* PBXContainerItemProxy */;
 		};
 		10970AA82CC7A1AD00DD4642 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -531,6 +657,66 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FeedbackAssistant;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10601A1B2D1D8C55003F0F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FeedbackAssistantWidgetExtensionDebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RP466MZ3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FeedbackAssistantWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FeedbackAssistantWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermo-kramsky.FeedbackAssistant.FeedbackAssistantWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10601A1C2D1D8C55003F0F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RP466MZ3W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FeedbackAssistantWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FeedbackAssistantWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermo-kramsky.FeedbackAssistant.FeedbackAssistantWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -703,7 +889,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = FeedbackAssistant/Configuration/FeedbackAssistant.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FeedbackAssistant/FeedbackAssistantDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -786,6 +972,15 @@
 			buildConfigurations = (
 				103C6EA32CE7977800EFB389 /* Debug */,
 				103C6EA42CE7977800EFB389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10601A1E2D1D8C55003F0F9C /* Build configuration list for PBXNativeTarget "FeedbackAssistantWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10601A1B2D1D8C55003F0F9C /* Debug */,
+				10601A1C2D1D8C55003F0F9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
