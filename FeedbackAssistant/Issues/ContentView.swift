@@ -31,7 +31,7 @@ struct ContentView: View {
         }
         .toolbar(content: ContentViewToolbar.init)
         .onAppear(perform: askForReview)
-        .onOpenURL(perform: openUrl)
+        .onOpenURL(perform: viewModel.openUrl)
         .userActivity(newIssueActivity) { activity in
             activity.isEligibleForPrediction = true
             activity.title = "New Issue"
@@ -47,12 +47,6 @@ struct ContentView: View {
     func askForReview() {
         if viewModel.shouldRequestReview {
             requestReview()
-        }
-    }
-
-    func openUrl(_ url: URL) {
-        if url.absoluteString.contains("newIssue") {
-            viewModel.dataController.newIssue()
         }
     }
 

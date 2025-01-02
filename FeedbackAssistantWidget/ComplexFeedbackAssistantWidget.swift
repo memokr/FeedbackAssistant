@@ -26,7 +26,7 @@ struct ComplexProvider: TimelineProvider {
 
     func loadIssues() -> [Issue] {
         let dataController = DataController()
-        let request = dataController.fetchRequestForTopIssues(count: 1)
+        let request = dataController.fetchRequestForTopIssues(count: 6)
         return dataController.results(for: request)
     }
 
@@ -41,24 +41,59 @@ struct ComplexEntry: TimelineEntry {
 }
 
 struct ComplexFeedbackAssistantWidgetEntryView : View {
+    @Environment(\.widgetFamily) var widgetFamily
+    @Environment(\.dynamicTypeSize) var dynamicTypeSize
     var entry: ComplexProvider.Entry
 
-    var body: some View {
-        VStack {
-            Text("Up Next:")
-                .font(.title)
+    var issues: ArraySlice<Issue> {
+        let issueCount: Int
 
-            if let issue = entry.issues.first {
-                Text(issue.issueTitle)
+        switch widgetFamily {
+        case .systemSmall:
+            issueCount = 1
+        case .systemLarge, .systemExtraLarge:
+            if dynamicTypeSize < .xLarge {
+                issueCount = 6
             } else {
-                Text("No issues found.")
+                issueCount = 5
+            }
+        default:
+            if dynamicTypeSize < .xLarge {
+                issueCount = 3
+            } else {
+                issueCount = 2
+            }
+        }
+
+        return entry.issues.prefix(issueCount)
+    }
+
+    var body: some View {
+        VStack(spacing: 10) {
+            ForEach(issues) { issue in
+                Link(destination: issue.objectID.uriRepresentation()){
+                    HStack{
+                        Text(issue.issueTitle)
+                            .font(.headline)
+                            .layoutPriority(1)
+                        Spacer()
+                    }
+
+                    if issue.issueTags.isEmpty == false {
+                        HStack{
+                            Text(issue.issueTagsList)
+                                .foregroundStyle(.secondary)
+                            Spacer()
+                        }
+                    }
+                }
             }
         }
     }
 }
 
 struct ComplexFeedbackAssistantWidget: Widget {
-    let kind: String = "FeedbackAssistantWidget"
+    let kind: String = "ComplexFeedbackAssistantWidget"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: ComplexProvider()) { entry in
@@ -71,9 +106,8 @@ struct ComplexFeedbackAssistantWidget: Widget {
                     .background()
             }
         }
-        .configurationDisplayName("Up next")
-        .description("Your #1 top priority issue.")
-        .supportedFamilies([.systemSmall])
+        .configurationDisplayName("Issues")
+        .description("Open issues")
     }
 }
 
