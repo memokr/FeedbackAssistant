@@ -24,9 +24,12 @@ struct StoreView: View {
 
     var body: some View {
         NavigationStack {
-            GeometryReader { geometry in
                 VStack(spacing: 0) {
                     VStack {
+                        #if os(macOS)
+                        MacStore()
+                        #else
+                        GeometryReader { geometry in
                             ZStack {
                                 LinearGradient(gradient: Gradient(
                                     colors: [
@@ -36,7 +39,7 @@ struct StoreView: View {
                                 Image(systemName: "lock.open.rotation")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: geometry.size.width * 0.4, height: geometry.size.height * 0.4)
+                                    .frame(width: geometry.size.width * 0.4, height: geometry.size.height * 0.6)
                                     .symbolRenderingMode(.hierarchical)
                                     .foregroundStyle(
                                         .linearGradient(
@@ -45,9 +48,9 @@ struct StoreView: View {
                                     )
                             }
                         }
+                        #endif
 
                     ScrollView {
-
                         VStack {
                             switch loadState {
                             case .loading:
@@ -104,6 +107,7 @@ struct StoreView: View {
                             }
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
+
                     }
                     Spacer()
                 }
@@ -123,7 +127,7 @@ struct StoreView: View {
                 await load()
             }
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: customToolBar()) {
                     Button {
                         dismiss()
                     } label: {
@@ -134,6 +138,7 @@ struct StoreView: View {
                 }
             }
         }
+        .macFrame(minWidth: 600, maxHeight: 500)
     }
     func checkForPurchase() {
         if dataController.fullVersionUnlocked {
@@ -170,6 +175,14 @@ struct StoreView: View {
         Task {
             try await AppStore.sync()
         }
+    }
+
+    func customToolBar () -> ToolbarItemPlacement {
+        #if os(macOS)
+        .cancellationAction
+        #else
+        .topBarTrailing
+        #endif
     }
 }
 

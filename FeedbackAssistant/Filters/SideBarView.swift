@@ -33,6 +33,7 @@ struct SideBarView: View {
             }
 
         }
+        .macFrame(minWidth: 220)
         .toolbar(content: SideBarViewToolbar.init)
         .alert("Rename tag", isPresented: $viewModel.renamingTag) {
             Button("OK", action: viewModel.completeRename)

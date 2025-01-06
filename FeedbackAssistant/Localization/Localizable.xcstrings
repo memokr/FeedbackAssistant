@@ -139,6 +139,9 @@
         }
       }
     },
+    "Add tag" : {
+
+    },
     "Add Tag" : {
       "localizations" : {
         "es-419" : {
@@ -270,6 +273,9 @@
           }
         }
       }
+    },
+    "Close" : {
+
     },
     "Close Issue" : {
       "localizations" : {
@@ -908,6 +914,9 @@
       }
     },
     "Restore Purchases" : {
+
+    },
+    "Show awards" : {
 
     },
     "Show reminders" : {
