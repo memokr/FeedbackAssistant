@@ -11,6 +11,9 @@ struct TagsMenuView: View {
     @ObservedObject var issue: Issue
     @EnvironmentObject var dataController: DataController
     var body: some View {
+        #if os(watchOS)
+        LabeledContent("Tags", value: issue.issueTagsList)
+        #else
         Menu {
             // show selected tags
 
@@ -42,5 +45,6 @@ struct TagsMenuView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .animation(nil, value: issue.issueTagsList)
         }
+        #endif
     }
 }

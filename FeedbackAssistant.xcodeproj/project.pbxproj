@@ -55,6 +55,18 @@
 		10601A762D2C0EF5003F0F9C /* MacStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10601A752D2C0EF5003F0F9C /* MacStore.swift */; };
 		106523452D1ACB990006C5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106523442D1ACB990006C5DA /* AppDelegate.swift */; };
 		106523472D1ACBA30006C5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106523462D1ACBA30006C5DA /* SceneDelegate.swift */; };
+		10B53DC72D2C2C47000652BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C908582C79E1AB00644702 /* Assets.xcassets */; };
+		10B53DC82D2C2C4C000652BB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 102645492CC117D900BCB096 /* Colors.xcassets */; };
+		10B53DC92D2C2C59000652BB /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10C908632C79E27600644702 /* Main.xcdatamodeld */; };
+		10B53DCA2D2C2C68000652BB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 102F81882CC3C87C000A1B0C /* Localizable.xcstrings */; };
+		10B53DCB2D2C2C79000652BB /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 1026457C2CC3C63F00BCB096 /* Awards.json */; };
+		10B53DCD2D2C2FC5000652BB /* NumberBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B53DCC2D2C2FC5000652BB /* NumberBadge.swift */; };
+		10B53DCE2D2C2FC5000652BB /* NumberBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B53DCC2D2C2FC5000652BB /* NumberBadge.swift */; };
+		10B53DD12D2C3696000652BB /* IssueRowWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B53DD02D2C3696000652BB /* IssueRowWatch.swift */; };
+		10B53DD22D2C3696000652BB /* IssueRowWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B53DD02D2C3696000652BB /* IssueRowWatch.swift */; };
+		10B53DD42D2C3901000652BB /* ToolbarItemPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B53DD32D2C3901000652BB /* ToolbarItemPlacement.swift */; };
+		10B53DD52D2C3901000652BB /* ToolbarItemPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B53DD32D2C3901000652BB /* ToolbarItemPlacement.swift */; };
+		10B53DD62D2C3BF1000652BB /* StoreConfiguration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 105B78F52D07015D00490D07 /* StoreConfiguration.storekit */; };
 		10BF2A722CFDFED90075711D /* DataController+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF2A712CFDFED90075711D /* DataController+Notifications.swift */; };
 		10C908552C79E1AA00644702 /* FeedbackAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908542C79E1AA00644702 /* FeedbackAssistantApp.swift */; };
 		10C908572C79E1AA00644702 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908562C79E1AA00644702 /* ContentView.swift */; };
@@ -65,6 +77,38 @@
 		10C9086A2C79FACC00644702 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908692C79FACC00644702 /* SideBarView.swift */; };
 		10C9086C2C79FAE200644702 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9086B2C79FAE200644702 /* DetailView.swift */; };
 		10C9086E2C79FC7900644702 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9086D2C79FC7900644702 /* Filter.swift */; };
+		10D75DD12D2C2AAF001F22B2 /* FAWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 10D75DC42D2C2AAE001F22B2 /* FAWatch Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		10D75DD62D2C2C00001F22B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908562C79E1AA00644702 /* ContentView.swift */; };
+		10D75DD72D2C2C00001F22B2 /* UserFilterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F81932CC68576000A1B0C /* UserFilterRow.swift */; };
+		10D75DD82D2C2C00001F22B2 /* FeedbackAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908542C79E1AA00644702 /* FeedbackAssistantApp.swift */; };
+		10D75DD92D2C2C00001F22B2 /* NoIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DE22CB42C0600303F10 /* NoIssueView.swift */; };
+		10D75DDA2D2C2C00001F22B2 /* InlineNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10601A4A2D2BE8D3003F0F9C /* InlineNavigationBar.swift */; };
+		10D75DDB2D2C2C00001F22B2 /* MacStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10601A752D2C0EF5003F0F9C /* MacStore.swift */; };
+		10D75DDC2D2C2C00001F22B2 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1026454C2CC118AD00BCB096 /* Award.swift */; };
+		10D75DDD2D2C2C00001F22B2 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B78FA2D070C9500490D07 /* StoreView.swift */; };
+		10D75DDE2D2C2C00001F22B2 /* DataController-Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10601A272D1D9163003F0F9C /* DataController-Awards.swift */; };
+		10D75DDF2D2C2C00001F22B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106523462D1ACBA30006C5DA /* SceneDelegate.swift */; };
+		10D75DE02D2C2C00001F22B2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057F8762CF0CD8F0026AEC9 /* ContentViewModel.swift */; };
+		10D75DE12D2C2C00001F22B2 /* ContentView+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F818F2CC682A1000A1B0C /* ContentView+Toolbar.swift */; };
+		10D75DE22D2C2C00001F22B2 /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDA2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift */; };
+		10D75DE32D2C2C00001F22B2 /* DataController+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF2A712CFDFED90075711D /* DataController+Notifications.swift */; };
+		10D75DE42D2C2C00001F22B2 /* DataController-StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B78F72D07031800490D07 /* DataController-StoreKit.swift */; };
+		10D75DE52D2C2C00001F22B2 /* IssueRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057F8782CF0CF880026AEC9 /* IssueRowViewModel.swift */; };
+		10D75DE62D2C2C00001F22B2 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908692C79FACC00644702 /* SideBarView.swift */; };
+		10D75DE72D2C2C00001F22B2 /* TagsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F81912CC6843D000A1B0C /* TagsMenuView.swift */; };
+		10D75DE82D2C2C00001F22B2 /* IssueView+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F818D2CC681B5000A1B0C /* IssueView+Toolbar.swift */; };
+		10D75DE92D2C2C00001F22B2 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9086D2C79FC7900644702 /* Filter.swift */; };
+		10D75DEA2D2C2C00001F22B2 /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DE02CB42BF800303F10 /* IssueView.swift */; };
+		10D75DEB2D2C2C00001F22B2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C908662C79E5D800644702 /* DataController.swift */; };
+		10D75DEC2D2C2C00001F22B2 /* SideBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057F8742CF0B7B10026AEC9 /* SideBarViewModel.swift */; };
+		10D75DED2D2C2C00001F22B2 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1026454E2CC119E800BCB096 /* AwardsView.swift */; };
+		10D75DEE2D2C2C00001F22B2 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102645462CC110EA00BCB096 /* Bundle-Decodable.swift */; };
+		10D75DEF2D2C2C00001F22B2 /* IssueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDE2CB4228800303F10 /* IssueRow.swift */; };
+		10D75DF02D2C2C00001F22B2 /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F5DDC2CB411EC00303F10 /* Tag-CoreDataHelpers.swift */; };
+		10D75DF12D2C2C00001F22B2 /* MacFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10601A702D2BFFB0003F0F9C /* MacFrame.swift */; };
+		10D75DF22D2C2C00001F22B2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C9086B2C79FAE200644702 /* DetailView.swift */; };
+		10D75DF32D2C2C00001F22B2 /* SideBarView+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F818B2CC67F5E000A1B0C /* SideBarView+Toolbar.swift */; };
+		10D75DF42D2C2C00001F22B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106523442D1ACB990006C5DA /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +140,13 @@
 			remoteGlobalIDString = 10C908502C79E1AA00644702;
 			remoteInfo = FeedbackAssistant;
 		};
+		10D75DCF2D2C2AAF001F22B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10C908492C79E1AA00644702 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10D75DC32D2C2AAE001F22B2;
+			remoteInfo = "FAWatch Watch App";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -109,6 +160,17 @@
 				10601A5E2D2BEF5C003F0F9C /* AssistantWidgetMacExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10D75DD22D2C2AAF001F22B2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				10D75DD12D2C2AAF001F22B2 /* FAWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -154,6 +216,9 @@
 		106523442D1ACB990006C5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		106523462D1ACBA30006C5DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		10970AA32CC7A1AD00DD4642 /* FeedbackAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedbackAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10B53DCC2D2C2FC5000652BB /* NumberBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberBadge.swift; sourceTree = "<group>"; };
+		10B53DD02D2C3696000652BB /* IssueRowWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRowWatch.swift; sourceTree = "<group>"; };
+		10B53DD32D2C3901000652BB /* ToolbarItemPlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItemPlacement.swift; sourceTree = "<group>"; };
 		10BF2A712CFDFED90075711D /* DataController+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController+Notifications.swift"; sourceTree = "<group>"; };
 		10C908512C79E1AA00644702 /* FeedbackAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C908542C79E1AA00644702 /* FeedbackAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAssistantApp.swift; sourceTree = "<group>"; };
@@ -167,6 +232,7 @@
 		10C908692C79FACC00644702 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 		10C9086B2C79FAE200644702 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		10C9086D2C79FC7900644702 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		10D75DC42D2C2AAE001F22B2 /* FAWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FAWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -200,6 +266,7 @@
 		10601A0F2D1D8C53003F0F9C /* FeedbackAssistantWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (10601A1D2D1D8C55003F0F9C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 10601A6A2D2BF04A003F0F9C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = FeedbackAssistantWidget; sourceTree = "<group>"; };
 		10601A532D2BEF5B003F0F9C /* AssistantWidgetMac */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (10601A5F2D2BEF5C003F0F9C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = AssistantWidgetMac; sourceTree = "<group>"; };
 		10970AA42CC7A1AD00DD4642 /* FeedbackAssistantTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FeedbackAssistantTests; sourceTree = "<group>"; };
+		10D75DC52D2C2AAE001F22B2 /* FAWatch Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "FAWatch Watch App"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +309,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		10D75DC12D2C2AAE001F22B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -268,6 +342,8 @@
 				10601A4A2D2BE8D3003F0F9C /* InlineNavigationBar.swift */,
 				10601A702D2BFFB0003F0F9C /* MacFrame.swift */,
 				10601A752D2C0EF5003F0F9C /* MacStore.swift */,
+				10B53DCC2D2C2FC5000652BB /* NumberBadge.swift */,
+				10B53DD32D2C3901000652BB /* ToolbarItemPlacement.swift */,
 			);
 			path = "Platform Adjustments";
 			sourceTree = "<group>";
@@ -321,6 +397,7 @@
 				102F818F2CC682A1000A1B0C /* ContentView+Toolbar.swift */,
 				105F5DDE2CB4228800303F10 /* IssueRow.swift */,
 				1057F8782CF0CF880026AEC9 /* IssueRowViewModel.swift */,
+				10B53DD02D2C3696000652BB /* IssueRowWatch.swift */,
 			);
 			path = Issues;
 			sourceTree = "<group>";
@@ -358,6 +435,7 @@
 				103C6E9B2CE7977800EFB389 /* FeedbackAssistantUITests */,
 				10601A0F2D1D8C53003F0F9C /* FeedbackAssistantWidget */,
 				10601A532D2BEF5B003F0F9C /* AssistantWidgetMac */,
+				10D75DC52D2C2AAE001F22B2 /* FAWatch Watch App */,
 				10601A0A2D1D8C53003F0F9C /* Frameworks */,
 				10C908522C79E1AA00644702 /* Products */,
 			);
@@ -371,6 +449,7 @@
 				103C6E9A2CE7977800EFB389 /* FeedbackAssistantUITests.xctest */,
 				10601A092D1D8C53003F0F9C /* FeedbackAssistantWidgetExtension.appex */,
 				10601A502D2BEF5B003F0F9C /* AssistantWidgetMacExtension.appex */,
+				10D75DC42D2C2AAE001F22B2 /* FAWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -511,6 +590,7 @@
 				10C9084E2C79E1AA00644702 /* Frameworks */,
 				10C9084F2C79E1AA00644702 /* Resources */,
 				10601A1A2D1D8C55003F0F9C /* Embed Foundation Extensions */,
+				10D75DD22D2C2AAF001F22B2 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -518,10 +598,33 @@
 				102F81972CC689A7000A1B0C /* PBXTargetDependency */,
 				10601A182D1D8C55003F0F9C /* PBXTargetDependency */,
 				10601A5D2D2BEF5C003F0F9C /* PBXTargetDependency */,
+				10D75DD02D2C2AAF001F22B2 /* PBXTargetDependency */,
 			);
 			name = FeedbackAssistant;
 			productName = FeedbackAssistant;
 			productReference = 10C908512C79E1AA00644702 /* FeedbackAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10D75DC32D2C2AAE001F22B2 /* FAWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10D75DD52D2C2AAF001F22B2 /* Build configuration list for PBXNativeTarget "FAWatch Watch App" */;
+			buildPhases = (
+				10D75DC02D2C2AAE001F22B2 /* Sources */,
+				10D75DC12D2C2AAE001F22B2 /* Frameworks */,
+				10D75DC22D2C2AAE001F22B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				10D75DC52D2C2AAE001F22B2 /* FAWatch Watch App */,
+			);
+			name = "FAWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "FAWatch Watch App";
+			productReference = 10D75DC42D2C2AAE001F22B2 /* FAWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -531,7 +634,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1610;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					103C6E992CE7977800EFB389 = {
@@ -550,6 +653,9 @@
 					};
 					10C908502C79E1AA00644702 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					10D75DC32D2C2AAE001F22B2 = {
+						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
@@ -575,6 +681,7 @@
 				103C6E992CE7977800EFB389 /* FeedbackAssistantUITests */,
 				10601A082D1D8C53003F0F9C /* FeedbackAssistantWidgetExtension */,
 				10601A4F2D2BEF5B003F0F9C /* AssistantWidgetMacExtension */,
+				10D75DC32D2C2AAE001F22B2 /* FAWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -620,6 +727,18 @@
 				10C908592C79E1AB00644702 /* Assets.xcassets in Resources */,
 				10601A742D2C03B8003F0F9C /* Credits.rtf in Resources */,
 				105B78F62D07015D00490D07 /* StoreConfiguration.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10D75DC22D2C2AAE001F22B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B53DC82D2C2C4C000652BB /* Colors.xcassets in Resources */,
+				10B53DCB2D2C2C79000652BB /* Awards.json in Resources */,
+				10B53DC72D2C2C47000652BB /* Assets.xcassets in Resources */,
+				10B53DCA2D2C2C68000652BB /* Localizable.xcstrings in Resources */,
+				10B53DD62D2C3BF1000652BB /* StoreConfiguration.storekit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +799,8 @@
 				10601A762D2C0EF5003F0F9C /* MacStore.swift in Sources */,
 				1026454F2CC119E800BCB096 /* AwardsView.swift in Sources */,
 				105F5DDD2CB411EC00303F10 /* Tag-CoreDataHelpers.swift in Sources */,
+				10B53DD12D2C3696000652BB /* IssueRowWatch.swift in Sources */,
+				10B53DCE2D2C2FC5000652BB /* NumberBadge.swift in Sources */,
 				10C908652C79E27600644702 /* Main.xcdatamodeld in Sources */,
 				105B78F82D07031800490D07 /* DataController-StoreKit.swift in Sources */,
 				105F5DDB2CB40E5A00303F10 /* Issue-CoreDataHelpers.swift in Sources */,
@@ -698,10 +819,53 @@
 				10BF2A722CFDFED90075711D /* DataController+Notifications.swift in Sources */,
 				106523452D1ACB990006C5DA /* AppDelegate.swift in Sources */,
 				105F5DE12CB42BF800303F10 /* IssueView.swift in Sources */,
+				10B53DD52D2C3901000652BB /* ToolbarItemPlacement.swift in Sources */,
 				1057F8772CF0CD8F0026AEC9 /* ContentViewModel.swift in Sources */,
 				105F5DE32CB42C0600303F10 /* NoIssueView.swift in Sources */,
 				105F5DDF2CB4228800303F10 /* IssueRow.swift in Sources */,
 				10C908552C79E1AA00644702 /* FeedbackAssistantApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10D75DC02D2C2AAE001F22B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D75DD62D2C2C00001F22B2 /* ContentView.swift in Sources */,
+				10D75DD72D2C2C00001F22B2 /* UserFilterRow.swift in Sources */,
+				10D75DD82D2C2C00001F22B2 /* FeedbackAssistantApp.swift in Sources */,
+				10D75DD92D2C2C00001F22B2 /* NoIssueView.swift in Sources */,
+				10D75DDA2D2C2C00001F22B2 /* InlineNavigationBar.swift in Sources */,
+				10D75DDB2D2C2C00001F22B2 /* MacStore.swift in Sources */,
+				10D75DDC2D2C2C00001F22B2 /* Award.swift in Sources */,
+				10D75DDD2D2C2C00001F22B2 /* StoreView.swift in Sources */,
+				10D75DDE2D2C2C00001F22B2 /* DataController-Awards.swift in Sources */,
+				10D75DDF2D2C2C00001F22B2 /* SceneDelegate.swift in Sources */,
+				10B53DD22D2C3696000652BB /* IssueRowWatch.swift in Sources */,
+				10B53DCD2D2C2FC5000652BB /* NumberBadge.swift in Sources */,
+				10D75DE02D2C2C00001F22B2 /* ContentViewModel.swift in Sources */,
+				10D75DE12D2C2C00001F22B2 /* ContentView+Toolbar.swift in Sources */,
+				10D75DE22D2C2C00001F22B2 /* Issue-CoreDataHelpers.swift in Sources */,
+				10D75DE32D2C2C00001F22B2 /* DataController+Notifications.swift in Sources */,
+				10B53DC92D2C2C59000652BB /* Main.xcdatamodeld in Sources */,
+				10D75DE42D2C2C00001F22B2 /* DataController-StoreKit.swift in Sources */,
+				10D75DE52D2C2C00001F22B2 /* IssueRowViewModel.swift in Sources */,
+				10D75DE62D2C2C00001F22B2 /* SideBarView.swift in Sources */,
+				10D75DE72D2C2C00001F22B2 /* TagsMenuView.swift in Sources */,
+				10D75DE82D2C2C00001F22B2 /* IssueView+Toolbar.swift in Sources */,
+				10D75DE92D2C2C00001F22B2 /* Filter.swift in Sources */,
+				10D75DEA2D2C2C00001F22B2 /* IssueView.swift in Sources */,
+				10D75DEB2D2C2C00001F22B2 /* DataController.swift in Sources */,
+				10D75DEC2D2C2C00001F22B2 /* SideBarViewModel.swift in Sources */,
+				10D75DED2D2C2C00001F22B2 /* AwardsView.swift in Sources */,
+				10D75DEE2D2C2C00001F22B2 /* Bundle-Decodable.swift in Sources */,
+				10D75DEF2D2C2C00001F22B2 /* IssueRow.swift in Sources */,
+				10D75DF02D2C2C00001F22B2 /* Tag-CoreDataHelpers.swift in Sources */,
+				10B53DD42D2C3901000652BB /* ToolbarItemPlacement.swift in Sources */,
+				10D75DF12D2C2C00001F22B2 /* MacFrame.swift in Sources */,
+				10D75DF22D2C2C00001F22B2 /* DetailView.swift in Sources */,
+				10D75DF32D2C2C00001F22B2 /* SideBarView+Toolbar.swift in Sources */,
+				10D75DF42D2C2C00001F22B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,6 +899,12 @@
 			isa = PBXTargetDependency;
 			target = 10C908502C79E1AA00644702 /* FeedbackAssistant */;
 			targetProxy = 10970AA72CC7A1AD00DD4642 /* PBXContainerItemProxy */;
+		};
+		10D75DD02D2C2AAF001F22B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 10D75DC32D2C2AAE001F22B2 /* FAWatch Watch App */;
+			targetProxy = 10D75DCF2D2C2AAF001F22B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1154,6 +1324,70 @@
 			};
 			name = Release;
 		};
+		10D75DD32D2C2AAF001F22B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FAWatch Watch App/FAWatch Watch AppDebug.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FAWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 9RP466MZ3W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FAWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.guillermo-kramsky.FeedbackAssistant";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermo-kramsky.FeedbackAssistant.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		10D75DD42D2C2AAF001F22B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FAWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 9RP466MZ3W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FAWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.guillermo-kramsky.FeedbackAssistant";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guillermo-kramsky.FeedbackAssistant.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1207,6 +1441,15 @@
 			buildConfigurations = (
 				10C908612C79E1AB00644702 /* Debug */,
 				10C908622C79E1AB00644702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10D75DD52D2C2AAF001F22B2 /* Build configuration list for PBXNativeTarget "FAWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10D75DD32D2C2AAF001F22B2 /* Debug */,
+				10D75DD42D2C2AAF001F22B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -126,6 +126,7 @@ struct StoreView: View {
             .task {
                 await load()
             }
+            #if !os(watchOS)
             .toolbar {
                 ToolbarItem(placement: customToolBar()) {
                     Button {
@@ -137,6 +138,7 @@ struct StoreView: View {
                     }
                 }
             }
+            #endif
         }
         .macFrame(minWidth: 600, maxHeight: 500)
     }

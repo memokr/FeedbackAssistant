@@ -16,6 +16,7 @@ struct IssueViewToolbar: View {
     }
 
     var body: some View {
+        #if !os(watchOS)
         Menu {
             Button("Copy Issue Title", systemImage: "doc.on.doc", action: copyToCLipboard)
 
@@ -35,12 +36,13 @@ struct IssueViewToolbar: View {
         } label: {
             Label("Actions", systemImage: "ellipsis.circle")
         }
+        #endif
     }
 
     func copyToCLipboard() {
         #if os(iOS)
         UIPasteboard.general.string = issue.title
-        #else
+        #elseif os(macOS)
         NSPasteboard.general.prepareForNewContents()
         NSPasteboard.general.setString(issue.issueTitle, forType: .string)
         #endif

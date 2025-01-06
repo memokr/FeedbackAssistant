@@ -41,8 +41,9 @@ struct AwardsView: View {
                 }
             }
             .navigationTitle("Awards")
+            #if !os(watchOS)
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
+                ToolbarItem(placement: customToolBar()) {
                     Button {
                         dismiss()
                     } label: {
@@ -52,6 +53,7 @@ struct AwardsView: View {
                     .help("Close")
                 }
             }
+            #endif
         }
         .macFrame(minWidth: 600, maxHeight: 500)
         .alert(awardsTitle, isPresented: $showingAwardDetails) {
@@ -74,6 +76,13 @@ struct AwardsView: View {
 
     func label(for award: Award) -> LocalizedStringKey {
         dataController.hasEarned(award: award) ? "Unlocked \(award.name)" : "Locked"
+    }
+    func customToolBar () -> ToolbarItemPlacement {
+        #if os(macOS)
+        .cancellationAction
+        #else
+        .topBarTrailing
+        #endif
     }
 }
 
