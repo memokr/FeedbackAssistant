@@ -15,6 +15,10 @@ enum LoadState {
 }
 
 struct StoreView: View {
+    #if os(visionOS)
+    @Environment(\.purchase) var purchaseAction
+
+    #endif
     @EnvironmentObject var dataController: DataController
     @Environment(\.dismiss) var dismiss
     @Environment(\.colorScheme) var colorScheme
@@ -154,7 +158,15 @@ struct StoreView: View {
         }
 
         Task { @MainActor in
+            #if os(visionOS)
+            let result = try await purchaseAction(product)
+
+            if case let .success(validation) = result {
+                try await dataController.finalize(validation.payloadValue)
+            }
+            #else
             try await dataController.purchase(product)
+            #endif
         }
     }
     func load() async {

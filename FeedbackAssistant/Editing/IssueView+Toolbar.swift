@@ -26,6 +26,7 @@ struct IssueViewToolbar: View {
             } label: {
                 Label(isIssueCompleted, systemImage: "bubble.left.and.exclamationmark.bubble.right")
             }
+            #if !os(visionOS)
             .sensoryFeedback(trigger: issue.completed) { oldValue, newValue in
                 if newValue {
                     .success
@@ -33,6 +34,7 @@ struct IssueViewToolbar: View {
                     nil
                 }
             }
+            #endif
         } label: {
             Label("Actions", systemImage: "ellipsis.circle")
         }
