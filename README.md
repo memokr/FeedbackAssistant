@@ -1,24 +1,35 @@
 # Feedback Assistant Clone 
 <img src="https://github.com/user-attachments/assets/1019f3fe-e90f-4ad1-b81c-8155d55b3c2d" alt="FeedbackAssistant" width="100"/> 
 <br>
-This project is a clone of Apple's Feedback Assistant native app, built using SwiftUI, Core Data for persistence, with support for localization, comprehensive code documentation, and adherence to SwiftLint for clean, maintainable code.
+This project is a clone of Apple's Feedback Assistant native app. Built with SwiftUI and Core Data, it incorporates powerful features like CloudKit synchronization, advanced filtering, sorting, and widgets. 
 <br>
-
-## Features
-
-- **Feedback Management**: Create, update, and delete feedback entries.
-- **Core Data**: Persistent storage of feedback data using Apple's Core Data framework.
-- **Localization**: Support for multiple languages (English, Spanish, Italian).
-- **Code Documentation**: Detailed code documentation to ensure clarity and maintainability.
-- **SwiftLint**: Integrated SwiftLint for enforcing Swift code style and quality standards.
+<br>
+The app is optimized for multiple platforms, including macOS, watchOS, and visionOS, ensuring a consistent experience across all Apple devices.
+<br>
 
 ## Technologies
 
-- **SwiftUI**: For building the user interface.
-- **Core Data**: Persistent storage of user feedbacks.
-- **Localization**: App localization to support multiple languages.
-- **Code Documentation**: Markup used to provide clarity on functions and classes.
-- **SwiftLint**: Linting tool used to enforce Swift coding standards.
+|  <img src="https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png" alt="SwiftUI" width="50"/>|  <img src="https://miro.medium.com/v2/resize:fit:300/1*nm4j_6GfwWpqhuSPlbO-sg.png" alt="Core Data" width="49"/>|<img src="https://developer.apple.com/assets/elements/icons/cloudkit/cloudkit-96x96_2x.png" alt="CloudKit" width="50"/> |<img src="https://developer.apple.com/assets/elements/icons/accessibility/accessibility-96x96_2x.png" alt="Accessibility" width="50"/>|<img src="https://developer.apple.com/assets/elements/icons/swift-testing/swift-testing-96x96_2x.png" alt="Testing" width="50"/>|<img src="https://developer.apple.com/assets/elements/icons/spotlight/spotlight-96x96_2x.png" alt="Spotlight" width="50"/>|<img src="https://developer.apple.com/assets/elements/icons/storekit/storekit-96x96_2x.png" alt="Store Kit" width="50"/>|<img src="https://developer.apple.com/assets/elements/icons/widgetkit/widgetkit-96x96_2x.png" alt="Widgets" width="50"/>| 
+| :---------------- | ------ | :------: | :------ |:---------------- | ------ | :------: | :------ |
+| SwiftUI        | CoreData  |   CloudKit   | Accessibility   | SwiftTesting | Spotlight  |   StoreKit   | WidgetKit   |
+
+## Features
+
+- **Issues Management:** Create, update, and delete issues entries with ease.
+- **Core Data:** Persistent storage of feedback data using Apple's Core Data framework.
+- **CloudKit Integration:** Synchronize issues data across devices with iCloud support.
+- **Advanced Filtering and Sorting:** Powerful tools to filter and sort feedback entries.
+- **JSON File Reading:** Load and process external JSON files for importing/exporting data.
+- **Localization:** Support for multiple languages (English, Spanish, Italian).
+- **Accessibility:** Fully optimized for accessibility with VoiceOver and Dynamic Type support.
+- **Testing:** Comprehensive Unit and UI tests for ensuring app reliability and stability.
+- **MVC and MVVM Architecture:** Combines Model-View-Controller and Model-View-ViewModel architectures for robust and scalable code.
+- **Spotlight Integration:** Search feedback entries directly from macOS or iOS Spotlight.
+- **Local Notifications:** Reminders and updates via local notifications.
+- **StoreKit and In-App Purchases:** Support for app monetization through in-app purchases.
+- **Widgets:** Interactive widgets for quick access to feedback data.
+- **Optimized for macOS, watchOS, and visionOS:** A seamless experience across Apple platforms.
+- **SwiftLint:** Ensure consistent coding style and adherence to best practices with SwiftLint.
 
 ## Installation
 
@@ -85,7 +96,3 @@ This project uses Swift's built-in documentation system. Code comments and docum
 To add or edit documentation:
 1. Use the `///` syntax to add documentation to methods, classes, structs, etc.
 2. Follow Apple's [Documentation Guidelines](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html).
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more information.
