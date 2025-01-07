@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 extension IssueRow {
     class ViewModel: ObservableObject {
 

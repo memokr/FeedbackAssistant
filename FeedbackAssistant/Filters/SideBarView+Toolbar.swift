@@ -13,7 +13,7 @@ struct SideBarViewToolbar: ToolbarContent {
     @State private var showStore = false
 
     var body: some ToolbarContent {
-        ToolbarItem(placement: .automaticOrTrailing){
+        ToolbarItem(placement: .automaticOrTrailing) {
             Button(action: tryNewTag) {
                 Label("Add Tag", systemImage: "plus")
             }
@@ -21,7 +21,7 @@ struct SideBarViewToolbar: ToolbarContent {
             .help("Add tag")
         }
 
-        ToolbarItem(placement: .automaticOrLeading){
+        ToolbarItem(placement: .automaticOrLeading) {
             Button {
                 showingAwards.toggle()
             } label: {
@@ -55,5 +55,3 @@ struct SideBarViewToolbar: ToolbarContent {
         }
     }
 }
-
-
